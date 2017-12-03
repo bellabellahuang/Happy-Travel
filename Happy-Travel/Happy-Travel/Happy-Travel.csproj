@@ -91,6 +91,7 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable\ButtonSignInStyle.xml" />
+    <AndroidResource Include="Resources\drawable\ButtonSignUpStyle.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

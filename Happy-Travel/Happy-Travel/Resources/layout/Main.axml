@@ -47,7 +47,8 @@
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:textSize="15sp"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        android:background="@drawable/buttonsignupstyle" />
     <RelativeLayout
         android:minWidth="25px"
         android:minHeight="25px"
