@@ -1644,17 +1644,20 @@ namespace HappyTravel
 			// aapt resource value: 0x7f02005c
 			public const int notification_icon_background = 2130837596;
 			
-			// aapt resource value: 0x7f02005f
-			public const int notification_template_icon_bg = 2130837599;
-			
 			// aapt resource value: 0x7f020060
-			public const int notification_template_icon_low_bg = 2130837600;
+			public const int notification_template_icon_bg = 2130837600;
+			
+			// aapt resource value: 0x7f020061
+			public const int notification_template_icon_low_bg = 2130837601;
 			
 			// aapt resource value: 0x7f02005d
 			public const int notification_tile_bg = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
 			public const int notify_panel_notification_icon_bg = 2130837598;
+			
+			// aapt resource value: 0x7f02005f
+			public const int ProgressBarStyle = 2130837599;
 			
 			static Drawable()
 			{
