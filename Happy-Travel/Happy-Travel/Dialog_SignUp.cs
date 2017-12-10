@@ -14,6 +14,7 @@ namespace HappyTravel
 {
     public class Dialog_SignUp : DialogFragment
     {
+
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             base.OnCreateView(inflater, container, savedInstanceState);
@@ -24,6 +25,7 @@ namespace HappyTravel
 
         public override void OnActivityCreated(Bundle savedInstanceState)
         {
+            
             Dialog.Window.RequestFeature(WindowFeatures.NoTitle);//Sets the title bar to invisible
             base.OnActivityCreated(savedInstanceState);
             Dialog.Window.Attributes.WindowAnimations = Resource.Style.dialog_animation;//set the animation

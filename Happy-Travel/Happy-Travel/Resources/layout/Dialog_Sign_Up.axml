@@ -41,16 +41,26 @@
         android:hint="@string/password_again_hint"
         android:paddingLeft="10dp"
         android:textColor="#000" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textError"
+        android:text="@string/error_hint"
+        android:textColor="#ffff3d00"
+        android:layout_below="@id/txtPassword2"
+        android:layout_centerHorizontal="true"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:visibility="invisible" />
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/txtPassword1"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="65dp">
         <Button
             android:text="Sign Up!"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btnDialogEmail"
+            android:id="@+id/btnDialogSignUp"
             android:textSize="20dp"
             android:textColor="#fff"
             android:textStyle="bold"
