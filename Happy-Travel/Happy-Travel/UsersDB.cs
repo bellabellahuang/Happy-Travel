@@ -48,6 +48,12 @@ namespace HappyTravel
             return user;
         }
 
+        // get user by username
+        public User GetUserByName(String username){
+            User user = dbConn.Table<User>().Where(a => a.username.Equals(username)).FirstOrDefault();
+            return user;
+        }
+
         // delete a user by id
         public void DeleteUserById(int id){
             dbConn.Delete<User>(id);

@@ -35,9 +35,9 @@ namespace HappyTravel
             {
                 if (String.IsNullOrEmpty(username.Text))
                 {
-                    username.Error = "Username can not be empty";
+                    username.Error = "Username cannot be empty";
                 }else if(String.IsNullOrEmpty(password1.Text)){
-                    password1.Error = "Password can not be empty";
+                    password1.Error = "Password cannot be empty";
                 }else if(String.IsNullOrEmpty(password2.Text)){
                     password2.Error = "Enter password again";
                 }else if(password1.Text.Equals(password2.Text)){

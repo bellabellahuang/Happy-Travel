@@ -14,11 +14,52 @@ namespace HappyTravel
 {
     public class Dialog_SignIn : DialogFragment
     {
+        private EditText username;
+        private EditText password;
+        private Button btnSignIn;
+        private UsersDB usersDB = UsersDB.Users;
+        private List<User> userList = new List<User>();
+        private User currentUser = new User();
+
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             base.OnCreateView(inflater, container, savedInstanceState);
 
             var view = inflater.Inflate(Resource.Layout.Dialog_Sign_In, container, false);
+            username = view.FindViewById<EditText>(Resource.Id.txtUsername);
+            password = view.FindViewById<EditText>(Resource.Id.txtPassword);
+            btnSignIn = view.FindViewById<Button>(Resource.Id.btnDialogSignIn);
+
+            // sign in button click event
+            btnSignIn.Click += (object sender, EventArgs e) => {
+                if(String.IsNullOrEmpty(username.Text)){
+                    username.Error = "Username cannot be empty";
+                }else if (String.IsNullOrEmpty(password.Text)){
+                    password.Error = "Password cannot be empty";
+                }else{
+                    // open user database
+                    usersDB.CreateTable();
+                    // get users list data
+                    userList = usersDB.GetUsersFromCache();
+
+                    currentUser = userList.Find(
+                            delegate (User user) {
+                                return user.username.Equals(username.Text);
+                            }
+                        );
+
+                    if(currentUser != null){
+                        if(currentUser.password.Equals(password.Text)){
+                            this.Dismiss();
+                        }else{
+                            password.Error = "Password is wrong";
+                        }
+                    }else{
+                        username.Error = "Username does not exist";
+                    }
+                }
+            };
+
             return view;
         }
 
