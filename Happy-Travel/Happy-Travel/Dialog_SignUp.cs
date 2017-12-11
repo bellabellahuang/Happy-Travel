@@ -14,12 +14,29 @@ namespace HappyTravel
 {
     public class Dialog_SignUp : DialogFragment
     {
+        private EditText username;
+        private EditText password1;
+        private EditText password2;
+        private Button btnSignUp;
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             base.OnCreateView(inflater, container, savedInstanceState);
 
             var view = inflater.Inflate(Resource.Layout.Dialog_Sign_Up, container, false);
+            username = view.FindViewById<EditText>(Resource.Id.txtUsernameSignUp);
+            password1 = view.FindViewById<EditText>(Resource.Id.txtPassword1);
+            password2 = view.FindViewById<EditText>(Resource.Id.txtPassword2);
+            btnSignUp = view.FindViewById<Button>(Resource.Id.btnDialogSignUp);
+
+            btnSignUp.Click += (object sender, System.EventArgs e) =>
+            {
+                if (String.IsNullOrEmpty(username.Text))
+                {
+                    username.Error = "Username can not be empty";
+                }
+            };
+
             return view;
         }
 
