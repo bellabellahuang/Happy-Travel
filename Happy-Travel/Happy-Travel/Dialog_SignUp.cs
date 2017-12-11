@@ -18,6 +18,8 @@ namespace HappyTravel
         private EditText password1;
         private EditText password2;
         private Button btnSignUp;
+        private User newUser = new User();
+        private UsersDB userDB = UsersDB.Users;
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
@@ -34,6 +36,22 @@ namespace HappyTravel
                 if (String.IsNullOrEmpty(username.Text))
                 {
                     username.Error = "Username can not be empty";
+                }else if(String.IsNullOrEmpty(password1.Text)){
+                    password1.Error = "Password can not be empty";
+                }else if(String.IsNullOrEmpty(password2.Text)){
+                    password2.Error = "Enter password again";
+                }else if(password1.Text.Equals(password2.Text)){
+                    // generate a new user
+                    newUser.username = username.Text;
+                    newUser.password = password1.Text;
+                    // open the users database
+                    userDB.CreateTable();
+                    // save the new user
+                    userDB.SaveUser(newUser);
+                    // close the dialog
+                    this.Dismiss();
+                }else{
+                    password2.Error = "This is different from the first entry";
                 }
             };
 
