@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:paddingTop="5dp"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_alignParentBottom="true"
+    android:background="#ff536dfe">
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/mTabMe">
+        <ImageView
+            android:src="@mipmap/me"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/imgMe"
+            android:layout_marginRight="0.0dp"
+            android:layout_marginBottom="0.0dp" />
+        <TextView
+            android:text="Me"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/mTabHome">
+        <ImageView
+            android:src="@mipmap/home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/imgHome" />
+        <TextView
+            android:text="Home"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/mTabPost">
+        <ImageView
+            android:src="@mipmap/pen"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/imgPost" />
+        <TextView
+            android:text="Post"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3" />
+    </LinearLayout>
+</LinearLayout>
