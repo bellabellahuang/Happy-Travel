@@ -6,7 +6,6 @@
     android:paddingTop="5dp"
     android:minWidth="25px"
     android:minHeight="25px"
-    android:layout_alignParentBottom="true"
     android:background="#ff536dfe">
     <LinearLayout
         android:gravity="center_horizontal"
