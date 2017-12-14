@@ -89,6 +89,7 @@
     <Compile Include="ArticleDB.cs" />
     <Compile Include="ArticlePublishingActivity.cs" />
     <Compile Include="ArticleListActivity.cs" />
+    <Compile Include="ArticleListViewAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
