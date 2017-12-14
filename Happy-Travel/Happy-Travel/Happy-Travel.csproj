@@ -88,6 +88,7 @@
     <Compile Include="Article.cs" />
     <Compile Include="ArticleDB.cs" />
     <Compile Include="ArticlePublishingActivity.cs" />
+    <Compile Include="ArticleListActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -119,6 +120,7 @@
     <AndroidResource Include="Resources\mipmap-xhdpi\me.png" />
     <AndroidResource Include="Resources\mipmap-xhdpi\pen.png" />
     <AndroidResource Include="Resources\layout\Post.axml" />
+    <AndroidResource Include="Resources\layout\ArticleItemLayout.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
