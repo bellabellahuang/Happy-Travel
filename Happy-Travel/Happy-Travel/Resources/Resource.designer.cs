@@ -1750,6 +1750,9 @@ namespace HappyTravel
 			// aapt resource value: 0x7f0b001d
 			public const int always = 2131427357;
 			
+			// aapt resource value: 0x7f0b0063
+			public const int articleListView = 2131427427;
+			
 			// aapt resource value: 0x7f0b001a
 			public const int beginning = 2131427354;
 			
@@ -1863,9 +1866,6 @@ namespace HappyTravel
 			
 			// aapt resource value: 0x7f0b0009
 			public const int listMode = 2131427337;
-			
-			// aapt resource value: 0x7f0b0063
-			public const int listView1 = 2131427427;
 			
 			// aapt resource value: 0x7f0b002b
 			public const int list_item = 2131427371;

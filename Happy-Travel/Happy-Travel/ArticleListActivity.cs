@@ -16,10 +16,24 @@ namespace HappyTravel
     [Activity(Label = "ArticleListActivity")]
     public class ArticleListActivity : Activity
     {
+        private ListView articleListView;
+        private ArticleDB articleDB = ArticleDB.Articles();
+        private List<Article> articleListData;
+        private ArticleListViewAdapter articleAdapter;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Home);
+
+            articleListView = FindViewById<ListView>(Resource.Id.articleListView);
+
+            // open or create the database
+            articleDB.CreateTable();
+            // get all the articles from database
+            articleListData = articleDB.GetAriticles();
+            articleAdapter = new ArticleListViewAdapter(this, articleListData);
+            articleListView.Adapter = articleAdapter;
         }
     }
 }
