@@ -51,6 +51,11 @@ namespace HappyTravel
                     if(currentUser != null){
                         if(currentUser.password.Equals(password.Text)){
                             this.Dismiss();
+                            Intent intent = new Intent(this.Context, typeof(ArticlePublishingActivity));
+                            Bundle bundle = new Bundle();
+                            bundle.PutInt("userId", currentUser.user_id);
+                            intent.PutExtras(bundle);
+                            StartActivity(intent);
                         }else{
                             password.Error = "Password is wrong";
                         }

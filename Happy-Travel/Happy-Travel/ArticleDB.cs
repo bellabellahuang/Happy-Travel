@@ -10,11 +10,6 @@ namespace HappyTravel
         SQLiteConnection dbConn;
         private const string DB_NAME = "Articles_DB.db3";
 
-        public ArticleDB()
-        {
-            
-        }
-
         public static ArticleDB Articles(){
             return articleDB;
         }
