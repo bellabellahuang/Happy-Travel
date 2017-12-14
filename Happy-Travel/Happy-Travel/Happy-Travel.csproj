@@ -122,6 +122,7 @@
     <AndroidResource Include="Resources\mipmap-xhdpi\pen.png" />
     <AndroidResource Include="Resources\layout\Post.axml" />
     <AndroidResource Include="Resources\layout\ArticleItemLayout.axml" />
+    <AndroidResource Include="Resources\layout\ArticleDetail.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

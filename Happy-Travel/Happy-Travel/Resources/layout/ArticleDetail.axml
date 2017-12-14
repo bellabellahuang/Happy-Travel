@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:background="@android:color/background_light"
+    p1:id="@+id/relativeLayout1">
+    <TextView
+        p1:text="@string/title_hint"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:gravity="center"
+        p1:textSize="25sp"
+        p1:paddingTop="5dp"
+        p1:paddingBottom="5dp"
+        p1:textColor="@android:color/white"
+        p1:background="#ff0f9881"
+        p1:id="@+id/txtDetailTitle" />
+    <LinearLayout
+        p1:gravity="center"
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:paddingBottom="5dp"
+        p1:id="@+id/linearLayout1"
+        p1:layout_below="@id/txtDetailTitle"
+        p1:background="#ff0f9881">
+        <TextView
+            p1:text="Author:"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:layout_marginRight="5dp"
+            p1:id="@+id/textView2" />
+        <TextView
+            p1:text="@string/author_hint"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/txtDetailAuthor" />
+    </LinearLayout>
+    <ScrollView
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:padding="5dp"
+        p1:id="@+id/scrollView1"
+        p1:layout_below="@id/linearLayout1">
+        <TextView
+            p1:text="@string/content_hint"
+            p1:textColor="@android:color/black"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:gravity="center_horizontal"
+            p1:id="@+id/txtDetailContent" />
+    </ScrollView>
+</RelativeLayout>
