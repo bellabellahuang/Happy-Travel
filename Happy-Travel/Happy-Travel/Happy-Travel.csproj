@@ -90,6 +90,7 @@
     <Compile Include="ArticlePublishingActivity.cs" />
     <Compile Include="ArticleListActivity.cs" />
     <Compile Include="ArticleListViewAdapter.cs" />
+    <Compile Include="ArticleDetailActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
