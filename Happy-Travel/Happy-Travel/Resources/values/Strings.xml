@@ -9,5 +9,7 @@
     <string name="error_hint">Password entries are not matched.</string>
     <string name="title_hint">Title</string>
     <string name="author_hint">Author name</string>
+    <string name="welcome_hint">Welcome,</string>
+    <string name="logout_hint">Logout</string>
     <string name="content_hint">Content will be display here.</string>
 </resources>

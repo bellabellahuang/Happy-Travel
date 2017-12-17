@@ -125,6 +125,7 @@
     <AndroidResource Include="Resources\layout\Post.axml" />
     <AndroidResource Include="Resources\layout\ArticleItemLayout.axml" />
     <AndroidResource Include="Resources\layout\ArticleDetail.axml" />
+    <AndroidResource Include="Resources\layout\MyProfile.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

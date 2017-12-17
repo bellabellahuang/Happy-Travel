@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/background_light"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ImageView
+        android:src="@mipmap/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView1" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <TextView
+            android:text="@string/welcome_hint"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView1" />
+        <TextView
+            android:text="@string/username_hint"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtMeUsername" />
+        <Button
+            android:text="@string/logout_hint"
+            android:background="@android:color/background_light"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btnLogout" />
+    </LinearLayout>
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout1">
+        <TextView
+            android:text="My Posts"
+            android:textSize="20sp"
+            android:background="@android:color/holo_purple"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtMyPosts" />
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_below="@id/txtMyPosts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/myPostListView" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/llMenu2">
+            <include
+                layout="@layout/Menu"
+                android:id="@+id/menu2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
