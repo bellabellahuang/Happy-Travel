@@ -15,20 +15,23 @@
         android:layout_weight="1"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:id="@+id/mTabMe">
+        android:id="@+id/mTabMe"
+        android:clickable="true">
         <ImageView
             android:src="@mipmap/me"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:id="@+id/imgMe"
             android:layout_marginRight="0.0dp"
-            android:layout_marginBottom="0.0dp" />
+            android:layout_marginBottom="0.0dp"
+            android:clickable="true" />
         <TextView
             android:text="Me"
             android:layout_marginTop="2dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView1" />
+            android:id="@+id/txtMe"
+            android:clickable="true" />
     </LinearLayout>
     <LinearLayout
         android:gravity="center_horizontal"
@@ -38,18 +41,21 @@
         android:layout_weight="1"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:id="@+id/mTabHome">
+        android:id="@+id/mTabHome"
+        android:clickable="true">
         <ImageView
             android:src="@mipmap/home"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:id="@+id/imgHome" />
+            android:id="@+id/imgHome"
+            android:clickable="true" />
         <TextView
             android:text="Home"
             android:layout_marginTop="2dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView2" />
+            android:id="@+id/txtHome"
+            android:clickable="true" />
     </LinearLayout>
     <LinearLayout
         android:gravity="center_horizontal"
@@ -59,17 +65,20 @@
         android:layout_weight="1"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:id="@+id/mTabPost">
+        android:id="@+id/mTabPost"
+        android:clickable="true">
         <ImageView
             android:src="@mipmap/pen"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:id="@+id/imgPost" />
+            android:id="@+id/imgPost"
+            android:clickable="true" />
         <TextView
             android:text="Post"
             android:layout_marginTop="2dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView3" />
+            android:id="@+id/txtPost"
+            android:clickable="true" />
     </LinearLayout>
 </LinearLayout>

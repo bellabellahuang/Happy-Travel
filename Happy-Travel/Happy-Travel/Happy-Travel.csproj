@@ -91,6 +91,7 @@
     <Compile Include="ArticleListActivity.cs" />
     <Compile Include="ArticleListViewAdapter.cs" />
     <Compile Include="ArticleDetailActivity.cs" />
+    <Compile Include="HomeActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
