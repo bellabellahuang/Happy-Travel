@@ -1771,11 +1771,11 @@ namespace HappyTravel
 			// aapt resource value: 0x7f0b009d
 			public const int btnPublish = 2131427485;
 			
-			// aapt resource value: 0x7f0b006e
-			public const int btnSignIn = 2131427438;
+			// aapt resource value: 0x7f0b006f
+			public const int btnSignIn = 2131427439;
 			
-			// aapt resource value: 0x7f0b0070
-			public const int btnSignUp = 2131427440;
+			// aapt resource value: 0x7f0b0071
+			public const int btnSignUp = 2131427441;
 			
 			// aapt resource value: 0x7f0b002e
 			public const int buttonPanel = 2131427374;
@@ -1849,17 +1849,17 @@ namespace HappyTravel
 			// aapt resource value: 0x7f0b0029
 			public const int image = 2131427369;
 			
-			// aapt resource value: 0x7f0b007b
-			public const int imageView1 = 2131427451;
+			// aapt resource value: 0x7f0b006d
+			public const int imageView1 = 2131427437;
 			
-			// aapt resource value: 0x7f0b0076
-			public const int imgHome = 2131427446;
+			// aapt resource value: 0x7f0b0077
+			public const int imgHome = 2131427447;
 			
-			// aapt resource value: 0x7f0b0073
-			public const int imgMe = 2131427443;
+			// aapt resource value: 0x7f0b0074
+			public const int imgMe = 2131427444;
 			
-			// aapt resource value: 0x7f0b0079
-			public const int imgPost = 2131427449;
+			// aapt resource value: 0x7f0b007a
+			public const int imgPost = 2131427450;
 			
 			// aapt resource value: 0x7f0b0090
 			public const int info = 2131427472;
@@ -1888,17 +1888,17 @@ namespace HappyTravel
 			// aapt resource value: 0x7f0b0081
 			public const int llMenu2 = 2131427457;
 			
-			// aapt resource value: 0x7f0b0075
-			public const int mTabHome = 2131427445;
+			// aapt resource value: 0x7f0b0076
+			public const int mTabHome = 2131427446;
+			
+			// aapt resource value: 0x7f0b0073
+			public const int mTabMe = 2131427443;
+			
+			// aapt resource value: 0x7f0b0079
+			public const int mTabPost = 2131427449;
 			
 			// aapt resource value: 0x7f0b0072
-			public const int mTabMe = 2131427442;
-			
-			// aapt resource value: 0x7f0b0078
-			public const int mTabPost = 2131427448;
-			
-			// aapt resource value: 0x7f0b0071
-			public const int mainProgressBar = 2131427441;
+			public const int mainProgressBar = 2131427442;
 			
 			// aapt resource value: 0x7f0b0089
 			public const int media_actions = 2131427465;
@@ -2089,8 +2089,8 @@ namespace HappyTravel
 			// aapt resource value: 0x7f0b009c
 			public const int txtContent = 2131427484;
 			
-			// aapt resource value: 0x7f0b006d
-			public const int txtCreatAccount = 2131427437;
+			// aapt resource value: 0x7f0b006e
+			public const int txtCreatAccount = 2131427438;
 			
 			// aapt resource value: 0x7f0b005a
 			public const int txtDetailAuthor = 2131427418;
@@ -2101,8 +2101,8 @@ namespace HappyTravel
 			// aapt resource value: 0x7f0b0057
 			public const int txtDetailTitle = 2131427415;
 			
-			// aapt resource value: 0x7f0b0077
-			public const int txtHome = 2131427447;
+			// aapt resource value: 0x7f0b0078
+			public const int txtHome = 2131427448;
 			
 			// aapt resource value: 0x7f0b005f
 			public const int txtItemAuthor = 2131427423;
@@ -2110,8 +2110,8 @@ namespace HappyTravel
 			// aapt resource value: 0x7f0b005d
 			public const int txtItemTitle = 2131427421;
 			
-			// aapt resource value: 0x7f0b0074
-			public const int txtMe = 2131427444;
+			// aapt resource value: 0x7f0b0075
+			public const int txtMe = 2131427445;
 			
 			// aapt resource value: 0x7f0b007d
 			public const int txtMeUsername = 2131427453;
@@ -2119,8 +2119,8 @@ namespace HappyTravel
 			// aapt resource value: 0x7f0b007f
 			public const int txtMyPosts = 2131427455;
 			
-			// aapt resource value: 0x7f0b006f
-			public const int txtOr = 2131427439;
+			// aapt resource value: 0x7f0b0070
+			public const int txtOr = 2131427440;
 			
 			// aapt resource value: 0x7f0b0061
 			public const int txtPassword = 2131427425;
@@ -2131,8 +2131,8 @@ namespace HappyTravel
 			// aapt resource value: 0x7f0b0065
 			public const int txtPassword2 = 2131427429;
 			
-			// aapt resource value: 0x7f0b007a
-			public const int txtPost = 2131427450;
+			// aapt resource value: 0x7f0b007b
+			public const int txtPost = 2131427451;
 			
 			// aapt resource value: 0x7f0b009a
 			public const int txtTitle = 2131427482;
@@ -2381,10 +2381,13 @@ namespace HappyTravel
 			public const int Icon = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int me = 2130903043;
+			public const int logo = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int pen = 2130903044;
+			public const int me = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int pen = 2130903045;
 			
 			static Mipmap()
 			{

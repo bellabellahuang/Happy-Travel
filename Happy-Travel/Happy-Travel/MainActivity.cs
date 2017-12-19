@@ -23,8 +23,10 @@ namespace HappyTravel
             mBtnSignIn = FindViewById<Button>(Resource.Id.btnSignIn);
             progressBar = FindViewById<ProgressBar>(Resource.Id.mainProgressBar);
 
+            // set the progress bar to invisible
             progressBar.Visibility = ViewStates.Invisible;
 
+            // the click event of the sign up button
             mBtnSignUp.Click += (object sender, System.EventArgs e) => 
             {
                 //Pull up the sign up dialog
@@ -33,6 +35,7 @@ namespace HappyTravel
                 signUpDialog.Show(transaction, "sign up dialog fragment");
             };
 
+            // the click event of the sign in button
             mBtnSignIn.Click += (object sender, System.EventArgs e) =>
             {
                 //Pull up the sign in dialog

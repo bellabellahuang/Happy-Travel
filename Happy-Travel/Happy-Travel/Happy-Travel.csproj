@@ -126,6 +126,7 @@
     <AndroidResource Include="Resources\layout\ArticleItemLayout.axml" />
     <AndroidResource Include="Resources\layout\ArticleDetail.axml" />
     <AndroidResource Include="Resources\layout\MyProfile.axml" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\logo.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
