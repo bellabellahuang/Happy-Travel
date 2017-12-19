@@ -12,13 +12,13 @@
         android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="15"
+        android:layout_weight="20"
         android:id="@+id/imageView1" />
     <TextView
-        android:text="Welcome to Happy Travel"
+        android:text="Join Us Now"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
-        android:layout_weight="20"
+        android:layout_weight="25"
         android:layout_height="0dp"
         android:textColor="@android:color/holo_green_dark"
         android:id="@+id/txtCreatAccount"
@@ -28,7 +28,7 @@
     <Button
         android:text="Sign In"
         android:layout_width="match_parent"
-        android:layout_weight="15"
+        android:layout_weight="20"
         android:layout_height="0dp"
         android:background="@drawable/ButtonSignInStyle"
         android:id="@+id/btnSignIn"
@@ -48,7 +48,7 @@
     <Button
         android:text="Sign Up"
         android:layout_width="match_parent"
-        android:layout_weight="15"
+        android:layout_weight="20"
         android:layout_height="0dp"
         android:id="@+id/btnSignUp"
         android:layout_marginRight="20dp"
@@ -56,7 +56,7 @@
         android:textSize="15sp"
         android:textColor="@android:color/white"
         android:background="@drawable/buttonsignupstyle" />
-    <RelativeLayout
+<!--<RelativeLayout
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
@@ -71,5 +71,5 @@
             android:layout_centerInParent="true"
             android:indeterminate="true"
             android:visibility="invisible" />
-    </RelativeLayout>
+    </RelativeLayout>-->
 </LinearLayout>

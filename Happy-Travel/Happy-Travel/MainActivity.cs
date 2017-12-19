@@ -21,10 +21,7 @@ namespace HappyTravel
 
             mBtnSignUp = FindViewById<Button>(Resource.Id.btnSignUp);
             mBtnSignIn = FindViewById<Button>(Resource.Id.btnSignIn);
-            progressBar = FindViewById<ProgressBar>(Resource.Id.mainProgressBar);
 
-            // set the progress bar to invisible
-            progressBar.Visibility = ViewStates.Invisible;
 
             // the click event of the sign up button
             mBtnSignUp.Click += (object sender, System.EventArgs e) => 
