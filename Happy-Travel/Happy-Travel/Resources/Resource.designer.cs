@@ -1831,11 +1831,11 @@ namespace HappyTravel
 			// aapt resource value: 0x7f0b000d
 			public const int homeAsUp = 2131427341;
 			
-			// aapt resource value: 0x7f0b0069
-			public const int homeBannerImageView = 2131427433;
-			
 			// aapt resource value: 0x7f0b0067
-			public const int homeRelativeLayout = 2131427431;
+			public const int homeBannerImageView = 2131427431;
+			
+			// aapt resource value: 0x7f0b0068
+			public const int homeRL = 2131427432;
 			
 			// aapt resource value: 0x7f0b002c
 			public const int icon = 2131427372;
@@ -1876,11 +1876,11 @@ namespace HappyTravel
 			// aapt resource value: 0x7f0b0009
 			public const int listMode = 2131427337;
 			
+			// aapt resource value: 0x7f0b0069
+			public const int listViewRL = 2131427433;
+			
 			// aapt resource value: 0x7f0b002b
 			public const int list_item = 2131427371;
-			
-			// aapt resource value: 0x7f0b0068
-			public const int llBanner = 2131427432;
 			
 			// aapt resource value: 0x7f0b006b
 			public const int llMenu = 2131427435;

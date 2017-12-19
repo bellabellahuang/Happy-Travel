@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="60dp"
+    android:layout_height="wrap_content"
     android:paddingTop="5dp"
     android:minWidth="25px"
     android:minHeight="25px"
@@ -19,11 +19,9 @@
         android:clickable="true">
         <ImageView
             android:src="@mipmap/me"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:id="@+id/imgMe"
-            android:layout_marginRight="0.0dp"
-            android:layout_marginBottom="0.0dp"
             android:clickable="true" />
         <TextView
             android:text="Me"
@@ -45,8 +43,8 @@
         android:clickable="true">
         <ImageView
             android:src="@mipmap/home"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:id="@+id/imgHome"
             android:clickable="true" />
         <TextView
@@ -69,8 +67,8 @@
         android:clickable="true">
         <ImageView
             android:src="@mipmap/pen"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:id="@+id/imgPost"
             android:clickable="true" />
         <TextView

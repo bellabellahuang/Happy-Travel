@@ -10,7 +10,6 @@ namespace HappyTravel
     {
         private Button mBtnSignUp;
         private Button mBtnSignIn;
-        private ProgressBar progressBar;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
