@@ -9,7 +9,7 @@
     <TextView
         android:text="@string/title_hint"
         android:textColor="@android:color/black"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="5dp"
         android:layout_marginBottom="5dp"
@@ -26,7 +26,7 @@
         <TextView
             android:text="Author:"
             android:textColor="@color/button_material_dark"
-            android:textSize="15sp"
+            android:textSize="10sp"
             android:id="@+id/txtAuthor"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
@@ -35,7 +35,7 @@
         <TextView
             android:text="@string/author_hint"
             android:textColor="@color/button_material_dark"
-            android:textSize="15sp"
+            android:textSize="10sp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/txtItemAuthor" />
