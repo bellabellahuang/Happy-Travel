@@ -1897,6 +1897,9 @@ namespace HappyTravel
 			// aapt resource value: 0x7f0b0078
 			public const int mTabPost = 2131427448;
 			
+			// aapt resource value: 0x7f0b0071
+			public const int mainProgressBar = 2131427441;
+			
 			// aapt resource value: 0x7f0b0089
 			public const int media_actions = 2131427465;
 			
@@ -1935,9 +1938,6 @@ namespace HappyTravel
 			
 			// aapt resource value: 0x7f0b0030
 			public const int parentPanel = 2131427376;
-			
-			// aapt resource value: 0x7f0b0071
-			public const int progressBar1 = 2131427441;
 			
 			// aapt resource value: 0x7f0b0005
 			public const int progress_circular = 2131427333;

@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using Android.Views;
 
 namespace HappyTravel
 {
@@ -9,6 +10,7 @@ namespace HappyTravel
     {
         private Button mBtnSignUp;
         private Button mBtnSignIn;
+        private ProgressBar progressBar;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -19,6 +21,9 @@ namespace HappyTravel
 
             mBtnSignUp = FindViewById<Button>(Resource.Id.btnSignUp);
             mBtnSignIn = FindViewById<Button>(Resource.Id.btnSignIn);
+            progressBar = FindViewById<ProgressBar>(Resource.Id.mainProgressBar);
+
+            progressBar.Visibility = ViewStates.Invisible;
 
             mBtnSignUp.Click += (object sender, System.EventArgs e) => 
             {
