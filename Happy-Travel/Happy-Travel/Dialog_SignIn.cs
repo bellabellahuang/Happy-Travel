@@ -50,6 +50,8 @@ namespace HappyTravel
 
                     if(currentUser != null){
                         if(currentUser.password.Equals(password.Text)){
+                            Toast toast = Toast.MakeText(this.Context, "loading...", ToastLength.Short);
+                            toast.Show();
                             // display the home page when username and password are correct
                             Intent intent = new Intent(this.Context, typeof(ArticleListActivity));
                             Bundle bundle = new Bundle();
