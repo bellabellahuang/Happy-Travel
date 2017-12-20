@@ -41,6 +41,7 @@ namespace HappyTravel
                 }else if(String.IsNullOrEmpty(password2.Text)){
                     password2.Error = "Enter password again";
                 }else if(password1.Text.Equals(password2.Text)){
+                    
                     // generate a new user
                     newUser.username = username.Text;
                     newUser.password = password1.Text;
@@ -48,6 +49,9 @@ namespace HappyTravel
                     userDB.CreateTable();
                     // save the new user
                     userDB.SaveUser(newUser);
+
+                    Toast toast = Toast.MakeText(this.Context, "Success. Please sign in", ToastLength.Long);
+                    toast.Show();
                     // close the dialog
                     this.Dismiss();
                 }else{
