@@ -27,9 +27,9 @@ namespace HappyTravel
             dbConn.CreateTable<User>();
         }
 
-        // insert or update a record of user
+        // insert a record of user
         public void SaveUser(User u){
-            dbConn.InsertOrReplace(u);
+            dbConn.Insert(u);
         }
 
         // retrieve all records from database

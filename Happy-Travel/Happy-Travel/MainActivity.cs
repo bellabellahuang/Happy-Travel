@@ -21,6 +21,7 @@ namespace HappyTravel
             mBtnSignUp = FindViewById<Button>(Resource.Id.btnSignUp);
             mBtnSignIn = FindViewById<Button>(Resource.Id.btnSignIn);
 
+            UsersDB.Users.CreateTable();
 
             // the click event of the sign up button
             mBtnSignUp.Click += (object sender, System.EventArgs e) => 

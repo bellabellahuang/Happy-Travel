@@ -19,7 +19,6 @@ namespace HappyTravel
         private EditText password2;
         private Button btnSignUp;
         private User newUser = new User();
-        private UsersDB userDB = UsersDB.Users;
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
@@ -45,10 +44,8 @@ namespace HappyTravel
                     // generate a new user
                     newUser.username = username.Text;
                     newUser.password = password1.Text;
-                    // open the users database
-                    userDB.CreateTable();
                     // save the new user
-                    userDB.SaveUser(newUser);
+                    UsersDB.Users.SaveUser(newUser);
 
                     Toast toast = Toast.MakeText(this.Context, "Success. Please sign in", ToastLength.Long);
                     toast.Show();

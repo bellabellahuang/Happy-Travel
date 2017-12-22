@@ -17,7 +17,6 @@ namespace HappyTravel
         private EditText username;
         private EditText password;
         private Button btnSignIn;
-        private UsersDB usersDB = UsersDB.Users;
         private List<User> userList = new List<User>();
         private User currentUser = new User();
 
@@ -37,10 +36,8 @@ namespace HappyTravel
                 }else if (String.IsNullOrEmpty(password.Text)){
                     password.Error = "Password cannot be empty";
                 }else{
-                    // open user database
-                    usersDB.CreateTable();
                     // get users list data
-                    userList = usersDB.GetUsersFromCache();
+                    userList = UsersDB.Users.GetUsersFromCache();
 
                     currentUser = userList.Find(
                             delegate (User user) {
