@@ -56,4 +56,17 @@
             p1:gravity="center_horizontal"
             p1:id="@+id/txtDetailContent" />
     </ScrollView>
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_alignParentBottom="true">
+        <include
+            layout="@layout/Menu"
+            p1:id="@+id/menu"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content" />
+    </LinearLayout>
 </RelativeLayout>

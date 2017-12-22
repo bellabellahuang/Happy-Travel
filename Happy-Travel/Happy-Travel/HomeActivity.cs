@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace HappyTravel
 {
-    [Activity(Label = "HomeActivity")]
+    [Activity(Label = "Home-Travel")]
     public class HomeActivity : Activity 
     {
         private LinearLayout tabMe;

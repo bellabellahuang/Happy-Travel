@@ -26,10 +26,12 @@ namespace HappyTravel
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Post);
 
+            // assign values to variables
             title = FindViewById<EditText>(Resource.Id.txtTitle);
             content = FindViewById<EditText>(Resource.Id.txtContent);
             btnPublish = FindViewById<Button>(Resource.Id.btnPublish);
 
+            // get the current logged in user id
             Bundle bundle = Intent.Extras;
             int userId = bundle.GetInt("userId");
 
