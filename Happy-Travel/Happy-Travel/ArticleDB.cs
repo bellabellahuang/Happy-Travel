@@ -25,7 +25,7 @@ namespace HappyTravel
         // insert or update a record of article
         public void SaveArticle(Article a)
         {
-            dbConn.InsertOrReplace(a);
+            dbConn.Insert(a);
         }
 
         // retrieve all records from database

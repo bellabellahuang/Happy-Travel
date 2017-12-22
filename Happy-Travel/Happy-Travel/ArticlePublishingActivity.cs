@@ -19,7 +19,6 @@ namespace HappyTravel
         private EditText title;
         private EditText content;
         private Button btnPublish;
-        private ArticleDB articleDB = ArticleDB.Articles();
         private Article newArticle = new Article();
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -47,10 +46,8 @@ namespace HappyTravel
                     newArticle.content = content.Text;
                     newArticle.user_id = userId; 
 
-                    // open or create the database
-                    articleDB.CreateTable();
                     // save the new article to the database
-                    articleDB.SaveArticle(newArticle);
+                    ArticleDB.Articles().SaveArticle(newArticle);
                     // clear the entries
                     title.Text = "";
                     content.Text = "";
