@@ -1,77 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:p1="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
     p1:minWidth="25px"
     p1:minHeight="25px"
-    p1:background="@android:color/white"
     p1:layout_width="match_parent"
     p1:layout_height="match_parent"
-    p1:id="@+id/scrollView1">
-    <LinearLayout
-        p1:orientation="vertical"
-        p1:padding="5dp"
+    p1:background="@android:color/background_light"
+    p1:id="@+id/relativeLayout1">
+    <ScrollView
         p1:minWidth="25px"
         p1:minHeight="25px"
         p1:layout_width="match_parent"
         p1:layout_height="match_parent"
-        p1:id="@+id/linearLayout1">
-        <TextView
-            p1:textSize="25sp"
-            p1:textColor="@android:color/holo_purple"
-            p1:gravity="center_horizontal"
-            p1:text="Write your own post"
+        p1:id="@+id/scrollView1">
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:padding="5dp"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
             p1:layout_width="match_parent"
-            p1:layout_height="wrap_content"
-            p1:layout_marginTop="5dp"
-            p1:layout_marginBottom="10dp"
-            p1:id="@+id/textView1" />
-        <TextView
-            p1:text="Title:"
-            p1:textSize="20sp"
-            p1:layout_marginLeft="5dp"
-            p1:textColor="@android:color/black"
+            p1:layout_height="match_parent"
+            p1:id="@+id/linearLayout1">
+            <TextView
+                p1:textSize="25sp"
+                p1:textColor="@android:color/holo_purple"
+                p1:gravity="center_horizontal"
+                p1:text="Write your own post"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:layout_marginTop="5dp"
+                p1:layout_marginBottom="10dp"
+                p1:id="@+id/textView1" />
+            <TextView
+                p1:text="Title:"
+                p1:textSize="20sp"
+                p1:layout_marginLeft="5dp"
+                p1:textColor="@android:color/black"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/textView2" />
+            <EditText
+                p1:id="@+id/txtTitle"
+                p1:layout_marginBottom="5dp"
+                p1:layout_marginTop="5dp"
+                p1:layout_marginLeft="5dp"
+                p1:layout_marginRight="5dp"
+                p1:background="@drawable/edit_text_style"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:backgroundTint="#ffe0e0e0" />
+            <TextView
+                p1:text="Content:"
+                p1:textSize="20sp"
+                p1:layout_marginLeft="5dp"
+                p1:textColor="@android:color/black"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/textView3" />
+            <EditText
+                p1:id="@+id/txtContent"
+                p1:layout_marginBottom="5dp"
+                p1:layout_marginTop="5dp"
+                p1:layout_marginLeft="5dp"
+                p1:layout_marginRight="5dp"
+                p1:background="@drawable/edit_text_style"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:minLines="8"
+                p1:gravity="top"
+                p1:backgroundTint="#ffe0e0e0" />
+            <Button
+                p1:text="Publish"
+                p1:textSize="20sp"
+                p1:gravity="center"
+                p1:layout_marginLeft="5dp"
+                p1:layout_marginRight="5dp"
+                p1:layout_marginTop="10dp"
+                p1:background="@drawable/buttonsignupstyle"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/btnPublish" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_alignParentBottom="true">
+        <include
+            layout="@layout/Menu"
+            p1:id="@+id/menu"
             p1:layout_width="match_parent"
-            p1:layout_height="wrap_content"
-            p1:id="@+id/textView2" />
-        <EditText
-            p1:id="@+id/txtTitle"
-            p1:layout_marginBottom="5dp"
-            p1:layout_marginTop="5dp"
-            p1:layout_marginLeft="5dp"
-            p1:layout_marginRight="5dp"
-            p1:background="@drawable/edit_text_style"
-            p1:layout_width="match_parent"
-            p1:layout_height="wrap_content"
-            p1:backgroundTint="#ffe0e0e0" />
-        <TextView
-            p1:text="Content:"
-            p1:textSize="20sp"
-            p1:layout_marginLeft="5dp"
-            p1:textColor="@android:color/black"
-            p1:layout_width="match_parent"
-            p1:layout_height="wrap_content"
-            p1:id="@+id/textView3" />
-        <EditText
-            p1:id="@+id/txtContent"
-            p1:layout_marginBottom="5dp"
-            p1:layout_marginTop="5dp"
-            p1:layout_marginLeft="5dp"
-            p1:layout_marginRight="5dp"
-            p1:background="@drawable/edit_text_style"
-            p1:layout_width="match_parent"
-            p1:layout_height="wrap_content"
-            p1:minLines="8"
-            p1:gravity="top"
-            p1:backgroundTint="#ffe0e0e0" />
-        <Button
-            p1:text="Publish"
-            p1:textSize="20sp"
-            p1:gravity="center"
-            p1:layout_marginLeft="5dp"
-            p1:layout_marginRight="5dp"
-            p1:layout_marginTop="10dp"
-            p1:background="@drawable/buttonsignupstyle"
-            p1:layout_width="match_parent"
-            p1:layout_height="wrap_content"
-            p1:id="@+id/btnPublish" />
+            p1:layout_height="wrap_content" />
     </LinearLayout>
-</ScrollView>
+</RelativeLayout>
