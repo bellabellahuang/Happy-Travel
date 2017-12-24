@@ -1750,8 +1750,8 @@ namespace HappyTravel
 			// aapt resource value: 0x7f0b001d
 			public const int always = 2131427357;
 			
-			// aapt resource value: 0x7f0b006b
-			public const int articleListView = 2131427435;
+			// aapt resource value: 0x7f0b006c
+			public const int articleListView = 2131427436;
 			
 			// aapt resource value: 0x7f0b001a
 			public const int beginning = 2131427354;
@@ -1876,14 +1876,11 @@ namespace HappyTravel
 			// aapt resource value: 0x7f0b0009
 			public const int listMode = 2131427337;
 			
-			// aapt resource value: 0x7f0b006a
-			public const int listViewRL = 2131427434;
-			
 			// aapt resource value: 0x7f0b002b
 			public const int list_item = 2131427371;
 			
-			// aapt resource value: 0x7f0b006c
-			public const int llMenu = 2131427436;
+			// aapt resource value: 0x7f0b006b
+			public const int llMenu = 2131427435;
 			
 			// aapt resource value: 0x7f0b0080
 			public const int llMenu2 = 2131427456;
@@ -1896,6 +1893,9 @@ namespace HappyTravel
 			
 			// aapt resource value: 0x7f0b0078
 			public const int mTabPost = 2131427448;
+			
+			// aapt resource value: 0x7f0b006a
+			public const int mViewPager = 2131427434;
 			
 			// aapt resource value: 0x7f0b0088
 			public const int media_actions = 2131427464;

@@ -95,6 +95,7 @@
     <Compile Include="MyFragment\MeFragment.cs" />
     <Compile Include="MyFragment\PostFragment.cs" />
     <Compile Include="MyFragment\HomeFragment.cs" />
+    <Compile Include="MyFragment\TabFragmentPagerAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
