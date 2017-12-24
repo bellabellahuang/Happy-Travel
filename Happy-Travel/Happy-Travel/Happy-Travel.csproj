@@ -92,6 +92,9 @@
     <Compile Include="ArticleListViewAdapter.cs" />
     <Compile Include="ArticleDetailActivity.cs" />
     <Compile Include="HomeActivity.cs" />
+    <Compile Include="MyFragment\MeFragment.cs" />
+    <Compile Include="MyFragment\PostFragment.cs" />
+    <Compile Include="MyFragment\HomeFragment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -127,10 +130,12 @@
     <AndroidResource Include="Resources\layout\ArticleDetail.axml" />
     <AndroidResource Include="Resources\layout\MyProfile.axml" />
     <AndroidResource Include="Resources\mipmap-xhdpi\logo.png" />
+    <AndroidResource Include="Resources\layout\ListViewLayout.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
     <Folder Include="Resources\anim\" />
+    <Folder Include="MyFragment\" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="sqlite-net">

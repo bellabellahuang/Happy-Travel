@@ -24,7 +24,7 @@ namespace HappyTravel
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.Home);
+            SetContentView(Resource.Layout.ListViewLayout);
 
             articleListView = FindViewById<ListView>(Resource.Id.articleListView);
 
