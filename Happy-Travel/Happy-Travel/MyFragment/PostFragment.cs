@@ -14,7 +14,7 @@ using Android.Widget;
 
 namespace HappyTravel.MyFragment
 {
-    public class PostFragment : Fragment
+    public class PostFragment : Android.Support.V4.App.Fragment
     {
         public override void OnCreate(Bundle savedInstanceState)
         {

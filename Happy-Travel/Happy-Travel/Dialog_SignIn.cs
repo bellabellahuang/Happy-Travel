@@ -50,7 +50,7 @@ namespace HappyTravel
                             Toast toast = Toast.MakeText(this.Context, "loading...", ToastLength.Short);
                             toast.Show();
                             // display the home page when username and password are correct
-                            Intent intent = new Intent(this.Context, typeof(ArticleListActivity));
+                            Intent intent = new Intent(this.Context, typeof(HomeActivity));
                             Bundle bundle = new Bundle();
                             bundle.PutInt("userId", currentUser.user_id);
                             intent.PutExtras(bundle);

@@ -32,7 +32,7 @@ namespace HappyTravel
             articleDB.CreateTable();
             // get all the articles from database
             articleListData = articleDB.GetAriticles();
-            articleAdapter = new ArticleListViewAdapter(this, articleListData);
+            //articleAdapter = new ArticleListViewAdapter(this, articleListData);
             articleListView.Adapter = articleAdapter;
 
             articleListView.ItemClick += (object sender, AdapterView.ItemClickEventArgs e) => {

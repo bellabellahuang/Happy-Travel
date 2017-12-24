@@ -15,30 +15,6 @@
         android:layout_weight="1"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:id="@+id/mTabMe"
-        android:clickable="true">
-        <ImageView
-            android:src="@mipmap/me"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:id="@+id/imgMe"
-            android:clickable="true" />
-        <TextView
-            android:text="Me"
-            android:layout_marginTop="2dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/txtMe"
-            android:clickable="true" />
-    </LinearLayout>
-    <LinearLayout
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        android:layout_marginTop="3dp"
-        android:layout_marginBottom="3dp"
-        android:layout_weight="1"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
         android:id="@+id/mTabHome"
         android:clickable="true">
         <ImageView
@@ -53,6 +29,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txtHome"
+            android:clickable="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/mTabMe"
+        android:clickable="true">
+        <ImageView
+            android:src="@mipmap/me"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imgMe"
+            android:clickable="true" />
+        <TextView
+            android:text="Me"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtMe"
             android:clickable="true" />
     </LinearLayout>
     <LinearLayout

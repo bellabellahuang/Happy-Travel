@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px">
-    <ImageView
+<!--<ImageView
         android:src="@mipmap/banner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView1" />
+        android:id="@+id/imageView1" />-->
     <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
@@ -72,7 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/myPostListView" />
-        <LinearLayout
+    <!--<LinearLayout
             android:orientation="vertical"
             android:minWidth="25px"
             android:minHeight="25px"
@@ -85,6 +85,6 @@
                 android:id="@+id/menu2"
                 android:layout_width="match_parent"
                 android:layout_height="60dp" />
-        </LinearLayout>
+        </LinearLayout>-->
     </RelativeLayout>
 </LinearLayout>

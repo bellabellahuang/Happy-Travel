@@ -81,7 +81,7 @@
                 p1:id="@+id/btnPublish" />
         </LinearLayout>
     </ScrollView>
-    <LinearLayout
+<!--<LinearLayout
         p1:orientation="vertical"
         p1:minWidth="25px"
         p1:minHeight="25px"
@@ -93,5 +93,5 @@
             p1:id="@+id/menu"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content" />
-    </LinearLayout>
+    </LinearLayout>-->
 </RelativeLayout>

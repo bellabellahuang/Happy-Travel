@@ -8,11 +8,11 @@ namespace HappyTravel
 {
     public class ArticleListViewAdapter : BaseAdapter<Article>
     {
-        private readonly Activity activity;
+        private readonly Android.Support.V4.App.Fragment activity;
         private List<Article> articleListData;
         private UsersDB userDB = UsersDB.Users;
 
-        public ArticleListViewAdapter(Activity a, List<Article> articles) : base()
+        public ArticleListViewAdapter(Android.Support.V4.App.Fragment a, List<Article> articles) : base()
         {
             this.activity = a;
             this.articleListData = articles;
@@ -43,7 +43,7 @@ namespace HappyTravel
         {
             var view = convertView;
             if(view == null){
-                view = activity.LayoutInflater.Inflate(Resource.Layout.ArticleItemLayout, null, false);
+                view = activity.Activity.LayoutInflater.Inflate(Resource.Layout.ArticleItemLayout, null, false);
             }
             Article article = this[position];
             view.FindViewById<TextView>(Resource.Id.txtItemTitle).Text = article.title;
