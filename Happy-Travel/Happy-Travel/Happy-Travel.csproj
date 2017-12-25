@@ -119,7 +119,6 @@
     <AndroidResource Include="Resources\layout\Home.axml" />
     <AndroidResource Include="Resources\mipmap-xhdpi\banner.jpeg" />
     <AndroidResource Include="Resources\layout\Menu.axml" />
-    <AndroidResource Include="Resources\mipmap-xhdpi\home.png" />
     <AndroidResource Include="Resources\mipmap-xhdpi\me.png" />
     <AndroidResource Include="Resources\mipmap-xhdpi\pen.png" />
     <AndroidResource Include="Resources\layout\Post.axml" />
@@ -127,6 +126,12 @@
     <AndroidResource Include="Resources\layout\ArticleDetail.axml" />
     <AndroidResource Include="Resources\layout\MyProfile.axml" />
     <AndroidResource Include="Resources\mipmap-xhdpi\logo.png" />
+    <AndroidResource Include="Resources\layout\MenuButton.axml" />
+    <AndroidResource Include="Resources\drawable\home.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\home.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\home3.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\pen1.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\person1.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
