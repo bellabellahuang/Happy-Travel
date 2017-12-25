@@ -6,23 +6,32 @@
     android:layout_height="wrap_content">
     <Button
         android:text="Me"
+        android:textColor="@android:color/white"
         android:layout_weight="1"
+        android:paddingTop="5dp"
+        android:background="#ff536dfe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableTop="@mipmap/me"
+        android:drawableTop="@mipmap/person1"
         android:id="@+id/btnMe" />
     <Button
         android:text="Home"
+        android:textColor="@android:color/white"
         android:layout_weight="1"
+        android:paddingTop="5dp"
+        android:background="#ff536dfe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableTop="@mipmap-mdpi/home"
+        android:drawableTop="@mipmap/home3"
         android:id="@+id/btnHome" />
     <Button
         android:text="Post"
+        android:textColor="@android:color/white"
         android:layout_weight="1"
+        android:paddingTop="5dp"
+        android:background="#ff536dfe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableTop="@mipmap/pen"
+        android:drawableTop="@mipmap/pen1"
         android:id="@+id/btnPost" />
 </LinearLayout>

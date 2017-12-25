@@ -25,7 +25,7 @@
         android:id="@+id/linearLayout1">
         <TextView
             android:text="Author:"
-            android:textColor="@color/button_material_dark"
+            android:textColor="@android:color/black"
             android:textSize="10sp"
             android:id="@+id/txtAuthor"
             android:layout_marginLeft="5dp"
@@ -34,7 +34,7 @@
             android:layout_height="match_parent" />
         <TextView
             android:text="@string/author_hint"
-            android:textColor="@color/button_material_dark"
+            android:textColor="@android:color/black"
             android:textSize="10sp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"

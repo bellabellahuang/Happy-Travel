@@ -43,8 +43,7 @@
             android:layout_alignParentBottom="true"
             android:id="@+id/llMenu">
             <include
-                layout="@layout/Menu"
-                android:id="@+id/menu"
+                layout="@layout/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
