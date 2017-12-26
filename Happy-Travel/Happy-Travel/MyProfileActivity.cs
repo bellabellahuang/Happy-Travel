@@ -19,6 +19,7 @@ namespace HappyTravel
         private Button btnMe;
         private Button btnHome;
         private Button btnPost;
+        private Button btnLogout;
         private TextView txtUsername;
         int userId;
 
@@ -40,6 +41,12 @@ namespace HappyTravel
 
             // call the menuBar method to handle menu buttons click events
             menuBar();
+
+            btnLogout.Click += (object sender, EventArgs e) => {
+                Intent intent = new Intent(this, typeof(MainActivity));
+                bundleUser.Clear();
+                StartActivity(intent);
+            };
         }
 
         // menu button click event handler
@@ -77,6 +84,7 @@ namespace HappyTravel
             btnMe = FindViewById<Button>(Resource.Id.btnMe);
             btnHome = FindViewById<Button>(Resource.Id.btnHome);
             btnPost = FindViewById<Button>(Resource.Id.btnPost);
+            btnLogout = FindViewById<Button>(Resource.Id.btnLogout);
         }
     }
 }
