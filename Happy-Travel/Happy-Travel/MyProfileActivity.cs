@@ -19,25 +19,32 @@ namespace HappyTravel
         private Button btnMe;
         private Button btnHome;
         private Button btnPost;
-
         private TextView txtUsername;
+        int userId;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.MyProfile);
 
+            // get the userId
             Bundle bundleUser = Intent.Extras;
-            int userId = bundleUser.GetInt("userId");
+            userId = bundleUser.GetInt("userId");
 
+            // initiate the views
+            initView();
+
+            // get the username and show it
             var username = UsersDB.Users.GetUserById(userId).username;
-            txtUsername = FindViewById<TextView>(Resource.Id.txtMeUsername);
             txtUsername.Text = username;
 
-            btnMe = FindViewById<Button>(Resource.Id.btnMe);
-            btnHome = FindViewById<Button>(Resource.Id.btnHome);
-            btnPost = FindViewById<Button>(Resource.Id.btnPost);
+            // call the menuBar method to handle menu buttons click events
+            menuBar();
+        }
 
+        // menu button click event handler
+        private void menuBar()
+        {
             btnMe.Click += (object sender, EventArgs e) => {
                 Intent intentMe = new Intent(this, typeof(MyProfileActivity));
                 Bundle bundleMe = new Bundle();
@@ -61,6 +68,15 @@ namespace HappyTravel
                 intentPost.PutExtras(bundlePost);
                 StartActivity(intentPost);
             };
+        }
+
+        // assign values to widget variables
+        private void initView()
+        {
+            txtUsername = FindViewById<TextView>(Resource.Id.txtMeUsername);
+            btnMe = FindViewById<Button>(Resource.Id.btnMe);
+            btnHome = FindViewById<Button>(Resource.Id.btnHome);
+            btnPost = FindViewById<Button>(Resource.Id.btnPost);
         }
     }
 }

@@ -20,20 +20,22 @@ namespace HappyTravel
         private ArticleDB articleDB = ArticleDB.Articles();
         private List<Article> articleListData;
         private ArticleListViewAdapter articleAdapter;
-
         private Button btnMe;
         private Button btnHome;
         private Button btnPost;
+        int userId;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Home);
 
+            // get the userId
             Bundle bundleUser = Intent.Extras;
-            int userId = bundleUser.GetInt("userId");
+            userId = bundleUser.GetInt("userId");
 
-            articleListView = FindViewById<ListView>(Resource.Id.articleListView);
+            // initiate views
+            initView();
 
             // open or create the database
             articleDB.CreateTable();
@@ -52,10 +54,13 @@ namespace HappyTravel
                 StartActivity(intent);
             };
 
-            btnMe = FindViewById<Button>(Resource.Id.btnMe);
-            btnHome = FindViewById<Button>(Resource.Id.btnHome);
-            btnPost = FindViewById<Button>(Resource.Id.btnPost);
+            // call menuBar method to handle menu buttons click events
+            menuBar();
+        }
 
+        // menu buttons click event handler
+        private void menuBar()
+        {
             btnMe.Click += (object sender, EventArgs e) => {
                 Intent intentMe = new Intent(this, typeof(MyProfileActivity));
                 Bundle bundleMe = new Bundle();
@@ -79,6 +84,15 @@ namespace HappyTravel
                 intentPost.PutExtras(bundlePost);
                 StartActivity(intentPost);
             };
+        }
+
+        // asign values to widget variables
+        private void initView()
+        {
+            articleListView = FindViewById<ListView>(Resource.Id.articleListView);
+            btnMe = FindViewById<Button>(Resource.Id.btnMe);
+            btnHome = FindViewById<Button>(Resource.Id.btnHome);
+            btnPost = FindViewById<Button>(Resource.Id.btnPost);
         }
     }
 }
