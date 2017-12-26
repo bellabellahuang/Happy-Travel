@@ -64,8 +64,7 @@
         p1:layout_height="wrap_content"
         p1:layout_alignParentBottom="true">
         <include
-            layout="@layout/Menu"
-            p1:id="@+id/menu"
+            layout="@layout/menubutton"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content" />
     </LinearLayout>

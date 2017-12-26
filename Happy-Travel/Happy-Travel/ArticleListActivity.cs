@@ -47,6 +47,7 @@ namespace HappyTravel
                 Intent intent = new Intent(this, typeof(ArticleDetailActivity));
                 Bundle bundle = new Bundle();
                 bundle.PutInt("Article", article.article_id);
+                bundle.PutInt("User", userId);
                 intent.PutExtras(bundle);
                 StartActivity(intent);
             };
