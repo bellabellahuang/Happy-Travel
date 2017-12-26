@@ -64,7 +64,7 @@ namespace HappyTravel
             };
 
             btnHome.Click += (object sender, EventArgs e) => {
-                Intent intentHome = new Intent(this, typeof(HomeActivity));
+                Intent intentHome = new Intent(this, typeof(ArticleListActivity));
                 Bundle bundleHome = new Bundle();
                 bundleHome.PutInt("userId", userId);
                 intentHome.PutExtras(bundleHome);

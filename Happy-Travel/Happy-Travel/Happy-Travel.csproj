@@ -109,7 +109,6 @@
     <Compile Include="ArticleListActivity.cs" />
     <Compile Include="ArticleListViewAdapter.cs" />
     <Compile Include="ArticleDetailActivity.cs" />
-    <Compile Include="HomeActivity.cs" />
     <Compile Include="MyProfileActivity.cs" />
   </ItemGroup>
   <ItemGroup>

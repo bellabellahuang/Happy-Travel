@@ -65,7 +65,7 @@
                 p1:background="@drawable/edit_text_style"
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
-                p1:minLines="8"
+                p1:minLines="5"
                 p1:gravity="top"
                 p1:backgroundTint="#ffe0e0e0" />
             <Button
@@ -75,6 +75,7 @@
                 p1:layout_marginLeft="5dp"
                 p1:layout_marginRight="5dp"
                 p1:layout_marginTop="10dp"
+                p1:layout_marginBottom="50dp"
                 p1:background="@drawable/buttonsignupstyle"
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
@@ -89,8 +90,7 @@
         p1:layout_height="wrap_content"
         p1:layout_alignParentBottom="true">
         <include
-            layout="@layout/Menu"
-            p1:id="@+id/menu"
+            layout="@layout/menubutton"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content" />
     </LinearLayout>
