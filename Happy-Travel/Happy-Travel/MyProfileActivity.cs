@@ -21,6 +21,9 @@ namespace HappyTravel
         private Button btnPost;
         private Button btnLogout;
         private TextView txtUsername;
+        private ListView myPostListView;
+        private List<Article> myPosts;
+        private ArticleListViewAdapter adapter;
         int userId;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -48,6 +51,11 @@ namespace HappyTravel
                 bundleUser.Clear();
                 StartActivity(intent);
             };
+
+            // get articles by user
+            myPosts = ArticleDB.Articles().GetArticleByUser(userId);
+            adapter = new ArticleListViewAdapter(this, myPosts);
+            myPostListView.Adapter = adapter;
         }
 
         // menu button click event handler
@@ -86,6 +94,7 @@ namespace HappyTravel
             btnHome = FindViewById<Button>(Resource.Id.btnHome);
             btnPost = FindViewById<Button>(Resource.Id.btnPost);
             btnLogout = FindViewById<Button>(Resource.Id.btnLogout);
+            myPostListView = FindViewById<ListView>(Resource.Id.myPostListView);
         }
     }
 }
