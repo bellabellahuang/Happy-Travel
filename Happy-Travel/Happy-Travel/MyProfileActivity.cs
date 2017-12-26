@@ -42,6 +42,7 @@ namespace HappyTravel
             // call the menuBar method to handle menu buttons click events
             menuBar();
 
+            // logout button click event handler
             btnLogout.Click += (object sender, EventArgs e) => {
                 Intent intent = new Intent(this, typeof(MainActivity));
                 bundleUser.Clear();
