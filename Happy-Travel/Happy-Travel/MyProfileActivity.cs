@@ -56,6 +56,16 @@ namespace HappyTravel
             myPosts = ArticleDB.Articles().GetArticleByUser(userId);
             adapter = new ArticleListViewAdapter(this, myPosts);
             myPostListView.Adapter = adapter;
+
+            myPostListView.ItemClick += (object sender, AdapterView.ItemClickEventArgs e) => {
+                Article article = myPosts[(int)e.Id];
+                Intent intent = new Intent(this, typeof(ArticleDetailActivity));
+                Bundle bundle = new Bundle();
+                bundle.PutInt("Article", article.article_id);
+                bundle.PutInt("User", userId);
+                intent.PutExtras(bundle);
+                StartActivity(intent);
+            };
         }
 
         // menu button click event handler
