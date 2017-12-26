@@ -13,7 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableTop="@mipmap/person1"
-        android:id="@+id/btnMe" />
+        android:id="@+id/btnMe"
+        android:clickable="true" />
     <Button
         android:text="Home"
         android:textColor="@android:color/white"
@@ -23,7 +24,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableTop="@mipmap/home3"
-        android:id="@+id/btnHome" />
+        android:id="@+id/btnHome"
+        android:clickable="true" />
     <Button
         android:text="Post"
         android:textColor="@android:color/white"
@@ -33,5 +35,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableTop="@mipmap/pen1"
-        android:id="@+id/btnPost" />
+        android:id="@+id/btnPost"
+        android:clickable="true" />
 </LinearLayout>

@@ -35,17 +35,49 @@
                 android:layout_height="wrap_content" />
         </RelativeLayout>
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:minWidth="25px"
             android:minHeight="25px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:id="@+id/llMenu">
+            android:layout_alignParentBottom="true">
             <include
                 layout="@layout/MenuButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+        <!--<Button
+        android:text="Me"
+        android:textColor="@android:color/white"
+        android:layout_weight="1"
+        android:paddingTop="5dp"
+        android:background="#ff536dfe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/person1"
+        android:id="@+id/btnMe"
+        android:clickable="true" />
+    <Button
+        android:text="Home"
+        android:textColor="@android:color/white"
+        android:layout_weight="1"
+        android:paddingTop="5dp"
+        android:background="#ff536dfe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/home3"
+        android:id="@+id/btnHome"
+        android:clickable="true" />
+    <Button
+        android:text="Post"
+        android:textColor="@android:color/white"
+        android:layout_weight="1"
+        android:paddingTop="5dp"
+        android:background="#ff536dfe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/pen1"
+        android:id="@+id/btnPost"
+        android:clickable="true" />-->
         </LinearLayout>
     </RelativeLayout>
 </LinearLayout>
