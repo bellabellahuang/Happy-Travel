@@ -110,6 +110,7 @@
     <Compile Include="ArticleListViewAdapter.cs" />
     <Compile Include="ArticleDetailActivity.cs" />
     <Compile Include="MyProfileActivity.cs" />
+    <Compile Include="Comment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
