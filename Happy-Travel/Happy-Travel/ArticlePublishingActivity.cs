@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace HappyTravel
 {
-    [Activity(Label = "ArticlePublishingActivity")]
+    [Activity(Label = "Publish")]
     public class ArticlePublishingActivity : Activity
     {
         private EditText title;

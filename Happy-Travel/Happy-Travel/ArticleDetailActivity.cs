@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace HappyTravel
 {
-    [Activity(Label = "Happy-Travel")]
+    [Activity(Label = "Happy Travel")]
     public class ArticleDetailActivity : Activity
     {
         private TextView title;

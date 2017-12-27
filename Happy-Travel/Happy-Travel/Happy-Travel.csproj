@@ -150,6 +150,10 @@
     <AndroidResource Include="Resources\mipmap-xhdpi\home3.png" />
     <AndroidResource Include="Resources\mipmap-xhdpi\pen1.png" />
     <AndroidResource Include="Resources\mipmap-xhdpi\person1.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\banner1.jpg" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\banner2.jpg" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\banner3.jpg" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\banner4.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

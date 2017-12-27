@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace HappyTravel
 {
-    [Activity(Label = "MyProfileActivity")]
+    [Activity(Label = "My Profile")]
     public class MyProfileActivity : Activity
     {
         private Button btnMe;

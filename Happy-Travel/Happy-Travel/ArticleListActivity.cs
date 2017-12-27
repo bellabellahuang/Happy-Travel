@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace HappyTravel
 {
-    [Activity(Label = "Home-Travel")]
+    [Activity(Label = "Happy Travel")]
     public class ArticleListActivity : Activity
     {
         private ListView articleListView;
