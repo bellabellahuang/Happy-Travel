@@ -28,6 +28,7 @@ namespace HappyTravel
         private UsersDB userDB = UsersDB.Users;
         private int articleId;
         private int userId;
+        private CommentsDB commentDB = CommentsDB.comments;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -53,14 +54,21 @@ namespace HappyTravel
             // call the menuBar method to handle buttons click events
             menuBar();
 
-            // open or create the comment database
-            var commentDB = CommentsDB.comments;
+            // call the addComment method to handle add comment button click event
+            addComment();
 
-            // add comment button click event handler
+        }
+
+        // add comment button click event handler
+        private void addComment()
+        {
             btnAddComment.Click += (object sender, EventArgs e) => {
-                if(String.IsNullOrEmpty(txtComment.Text)){
+                if (String.IsNullOrEmpty(txtComment.Text))
+                {
                     txtComment.Error = "Nothing to be commented";
-                }else{
+                }
+                else
+                {
                     Comment newComment = new Comment();
                     newComment.article_id = articleId;
                     newComment.user_id = userId;
@@ -72,8 +80,6 @@ namespace HappyTravel
                     txtComment.Text = "";
                 }
             };
-
-
         }
 
         // menu buttons click event handler
