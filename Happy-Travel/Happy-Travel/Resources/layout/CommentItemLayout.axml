@@ -26,7 +26,6 @@
             android:text="@string/by_user"
             android:textColor="@android:color/black"
             android:textSize="10sp"
-            android:id="@+id/txtAuthor"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
             android:layout_width="wrap_content"
@@ -37,6 +36,6 @@
             android:textSize="10sp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/txtItemAuthor" />
+            android:id="@+id/txtByUser" />
     </LinearLayout>
 </LinearLayout>
