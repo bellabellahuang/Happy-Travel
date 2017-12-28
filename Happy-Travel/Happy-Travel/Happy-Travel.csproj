@@ -112,6 +112,7 @@
     <Compile Include="MyProfileActivity.cs" />
     <Compile Include="Comment.cs" />
     <Compile Include="CommentsDB.cs" />
+    <Compile Include="CommentListAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
