@@ -19,13 +19,15 @@ namespace HappyTravel
         private TextView title;
         private TextView author;
         private TextView content;
-        private ArticleDB articleDB = ArticleDB.Articles();
-        private UsersDB userDB = UsersDB.Users;
+        private EditText txtComment;
         private Button btnMe;
         private Button btnHome;
         private Button btnPost;
-        int articleId;
-        int userId;
+        private Button btnAddComment;
+        private ArticleDB articleDB = ArticleDB.Articles();
+        private UsersDB userDB = UsersDB.Users;
+        private int articleId;
+        private int userId;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -50,6 +52,26 @@ namespace HappyTravel
 
             // call the menuBar method to handle buttons click events
             menuBar();
+
+            // open or create the comment database
+            var commentDB = CommentsDB.comments;
+
+            // add comment button click event handler
+            btnAddComment.Click += (object sender, EventArgs e) => {
+                if(String.IsNullOrEmpty(txtComment.Text)){
+                    txtComment.Error = "Nothing to be commented";
+                }else{
+                    Comment newComment = new Comment();
+                    newComment.article_id = articleId;
+                    newComment.user_id = userId;
+                    newComment.comment = txtComment.Text;
+                    commentDB.CreateTable();
+                    commentDB.SaveComment(newComment);
+                    Toast toast = Toast.MakeText(this, "Your comment has been added", ToastLength.Long);
+                    toast.Show();
+                    txtComment.Text = "";
+                }
+            };
 
 
         }
@@ -91,6 +113,8 @@ namespace HappyTravel
             btnMe = FindViewById<Button>(Resource.Id.btnMe);
             btnHome = FindViewById<Button>(Resource.Id.btnHome);
             btnPost = FindViewById<Button>(Resource.Id.btnPost);
+            btnAddComment = FindViewById<Button>(Resource.Id.btnAddComment);
+            txtComment = FindViewById<EditText>(Resource.Id.txtComment);
         }
     }
 }
