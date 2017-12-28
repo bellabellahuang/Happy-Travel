@@ -14,4 +14,5 @@
     <string name="logout_hint">Logout</string>
     <string name="content_hint">Content will be display here.</string>
     <string name="btnComment_hint">Add Comment</string>
+    <string name="by_user">By</string>
 </resources>
