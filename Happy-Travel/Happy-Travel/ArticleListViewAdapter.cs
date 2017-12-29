@@ -49,9 +49,13 @@ namespace HappyTravel
             view.FindViewById<TextView>(Resource.Id.txtItemTitle).Text = article.title;
 
             userDB.CreateTable();
-            User author = userDB.GetUserById(article.user_id);
-
-            view.FindViewById<TextView>(Resource.Id.txtItemAuthor).Text = author.username;
+            User author = new User();
+            author = userDB.GetUserById(article.user_id);
+            if(author == null ){
+                view.FindViewById<TextView>(Resource.Id.txtItemAuthor).Text = "NO_NAME";
+            }else{
+                view.FindViewById<TextView>(Resource.Id.txtItemAuthor).Text = author.username;
+            }
 
             return view;
         }

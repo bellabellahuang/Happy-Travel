@@ -63,5 +63,27 @@ namespace HappyTravel
         public void ClearUserCache(){
             dbConn.DeleteAll<User>();
         }
+
+        // initiate database
+        public void initUserDB(){
+            User bob = new User();
+            bob.user_id = 1;
+            bob.username = "bob";
+            bob.password = "bob";
+
+            User mary = new User();
+            mary.user_id = 2;
+            mary.username = "mary";
+            mary.password = "mary";
+
+            User jim = new User();
+            jim.user_id = 3;
+            jim.username = "jim";
+            jim.password = "jim";
+
+            dbConn.Insert(bob);
+            dbConn.Insert(mary);
+            dbConn.Insert(jim);
+        }
     }
 }
