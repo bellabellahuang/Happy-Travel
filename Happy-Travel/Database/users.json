@@ -1,0 +1,41 @@
+[{
+  "user_id": 1,
+  "username": "bob",
+  "password": "bob"
+}, {
+  "user_id": 2,
+  "username": "mary",
+  "password": "mary"
+}, {
+  "user_id": 3,
+  "username": "whitby",
+  "password": "RU5pjTLU"
+}, {
+  "user_id": 4,
+  "username": "Alberik",
+  "password": "G98GKhnwLE"
+}, {
+  "user_id": 5,
+  "username": "Thomas",
+  "password": "4vzDuAl3"
+}, {
+  "user_id": 6,
+  "username": "Kellie",
+  "password": "8RISQo8DQx5"
+}, {
+  "user_id": 7,
+  "username": "Alden",
+  "password": "U65BuEgiQwaT"
+}, {
+  "user_id": 8,
+  "username": "Ardene",
+  "password": "gdXoeDhya"
+}, {
+  "user_id": 9,
+  "username": "Milena",
+  "password": "NIWCcSZUo"
+}, {
+  "user_id": 10,
+  "username": "Cale",
+  "password": "qBCdufQP"
+}]
