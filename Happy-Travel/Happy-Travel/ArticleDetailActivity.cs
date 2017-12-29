@@ -24,11 +24,13 @@ namespace HappyTravel
         private Button btnHome;
         private Button btnPost;
         private Button btnAddComment;
+        private ListView commentsListView;
         private ArticleDB articleDB = ArticleDB.Articles();
         private UsersDB userDB = UsersDB.Users;
         private int articleId;
         private int userId;
         private CommentsDB commentDB = CommentsDB.comments;
+        private List<Comment> commentListData;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -54,9 +56,20 @@ namespace HappyTravel
             // call the menuBar method to handle buttons click events
             menuBar();
 
+            // display comments
+            commentDB.CreateTable();
+            updateComments();
+
             // call the addComment method to handle add comment button click event
             addComment();
 
+        }
+
+        private void updateComments()
+        {
+            commentListData = commentDB.GetCommentsByArticle(articleId);
+            CommentListAdapter adapter = new CommentListAdapter(this, commentListData);
+            commentsListView.Adapter = adapter;
         }
 
         // add comment button click event handler
@@ -73,11 +86,12 @@ namespace HappyTravel
                     newComment.article_id = articleId;
                     newComment.user_id = userId;
                     newComment.comment = txtComment.Text;
-                    commentDB.CreateTable();
+
                     commentDB.SaveComment(newComment);
                     Toast toast = Toast.MakeText(this, "Your comment has been added", ToastLength.Long);
                     toast.Show();
                     txtComment.Text = "";
+                    updateComments();
                 }
             };
         }
@@ -121,6 +135,7 @@ namespace HappyTravel
             btnPost = FindViewById<Button>(Resource.Id.btnPost);
             btnAddComment = FindViewById<Button>(Resource.Id.btnAddComment);
             txtComment = FindViewById<EditText>(Resource.Id.txtComment);
+            commentsListView = FindViewById<ListView>(Resource.Id.commentsListView);
         }
     }
 }
