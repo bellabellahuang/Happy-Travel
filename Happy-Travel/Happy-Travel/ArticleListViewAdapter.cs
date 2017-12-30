@@ -10,7 +10,7 @@ namespace HappyTravel
     {
         private readonly Activity activity;
         private List<Article> articleListData;
-        private UsersDB userDB = UsersDB.Users;
+        // private UsersDB userDB = UsersDB.Users;
 
         public ArticleListViewAdapter(Activity a, List<Article> articles) : base()
         {
@@ -48,14 +48,14 @@ namespace HappyTravel
             Article article = this[position];
             view.FindViewById<TextView>(Resource.Id.txtItemTitle).Text = article.title;
 
-            userDB.CreateTable();
+            // userDB.CreateTable();
             User author = new User();
-            author = userDB.GetUserById(article.user_id);
-            if(author == null ){
-                view.FindViewById<TextView>(Resource.Id.txtItemAuthor).Text = "NO_NAME";
-            }else{
+            author = UsersDB.Users.GetUserById(article.user_id);
+            //if(author == null ){
+            //    view.FindViewById<TextView>(Resource.Id.txtItemAuthor).Text = "NO_NAME";
+            //}else{
                 view.FindViewById<TextView>(Resource.Id.txtItemAuthor).Text = author.username;
-            }
+            //}
 
             return view;
         }

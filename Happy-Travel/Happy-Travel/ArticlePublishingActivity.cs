@@ -93,7 +93,7 @@ namespace HappyTravel
                     newArticle.user_id = userId;
 
                     // save the new article to the database
-                    ArticleDB.Articles().SaveArticle(newArticle);
+                    ArticleDB.Articles.SaveArticle(newArticle);
                     // clear the entries
                     title.Text = "";
                     content.Text = "";

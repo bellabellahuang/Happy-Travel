@@ -25,7 +25,7 @@ namespace HappyTravel
         private Button btnPost;
         private Button btnAddComment;
         private ListView commentsListView;
-        private ArticleDB articleDB = ArticleDB.Articles();
+        private ArticleDB articleDB = ArticleDB.Articles;
         private UsersDB userDB = UsersDB.Users;
         private int articleId;
         private int userId;

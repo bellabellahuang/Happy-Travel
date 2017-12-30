@@ -53,7 +53,7 @@ namespace HappyTravel
             };
 
             // get articles by user
-            myPosts = ArticleDB.Articles().GetArticleByUser(userId);
+            myPosts = ArticleDB.Articles.GetArticleByUser(userId);
             adapter = new ArticleListViewAdapter(this, myPosts);
             myPostListView.Adapter = adapter;
 

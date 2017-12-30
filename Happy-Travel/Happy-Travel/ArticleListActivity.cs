@@ -17,7 +17,7 @@ namespace HappyTravel
     public class ArticleListActivity : Activity
     {
         private ListView articleListView;
-        private ArticleDB articleDB = ArticleDB.Articles();
+        private ArticleDB articleDB = ArticleDB.Articles;
         private List<Article> articleListData;
         private ArticleListViewAdapter articleAdapter;
         private Button btnMe;
@@ -39,6 +39,8 @@ namespace HappyTravel
 
             // open or create the database
             articleDB.CreateTable();
+            articleDB.ClearArticles();
+            articleDB.initArticleDB();
             // get all the articles from database
             articleListData = articleDB.GetAriticles();
             articleAdapter = new ArticleListViewAdapter(this, articleListData);
