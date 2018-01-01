@@ -51,11 +51,11 @@ namespace HappyTravel
             // userDB.CreateTable();
             User author = new User();
             author = UsersDB.Users.GetUserById(article.user_id);
-            //if(author == null ){
-            //    view.FindViewById<TextView>(Resource.Id.txtItemAuthor).Text = "NO_NAME";
-            //}else{
+            if(author == null ){
+                view.FindViewById<TextView>(Resource.Id.txtItemAuthor).Text = "NO_NAME";
+            }else{
                 view.FindViewById<TextView>(Resource.Id.txtItemAuthor).Text = author.username;
-            //}
+            }
 
             return view;
         }

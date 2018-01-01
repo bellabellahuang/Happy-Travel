@@ -73,9 +73,13 @@ namespace HappyTravel
 
         // initiate database
         public void initArticleDB(){
+            User bob = UsersDB.Users.GetUserByName("bob");
+            User mary = UsersDB.Users.GetUserByName("mary");
+            User jim = UsersDB.Users.GetUserByName("jim");
+
             Article bobArticle = new Article();
             bobArticle.article_id = 1;
-            bobArticle.user_id = 1;
+            bobArticle.user_id = bob.user_id;
             bobArticle.title = "My trip in Thailand";
             bobArticle.content = "I went to Thailand with my friend this Summer. " +
                 "It is really a great trip and I would like to share my story to you." +
@@ -88,7 +92,7 @@ namespace HappyTravel
 
             Article maryArticle = new Article();
             maryArticle.article_id = 2;
-            maryArticle.user_id = 2;
+            maryArticle.user_id = mary.user_id;
             maryArticle.title = "A YEAR IN REVIEW";
             maryArticle.content = "As dawn broke on this year, I was excited for a fresh start. Last year, " +
                 "I dealt with panic attacks and anxiety from taking on too many projects, " +
@@ -101,7 +105,7 @@ namespace HappyTravel
 
             Article jimArticle = new Article();
             jimArticle.article_id = 3;
-            jimArticle.user_id = 3;
+            jimArticle.user_id = jim.user_id;
             jimArticle.title = "6 (NON-MILLENNIAL) SOLO FEMALE TRAVELERS SHARE THEIR TRAVEL WISDOM";
             jimArticle.content = "Kristin Addis from Be My Travel Muse writes our regular column on solo female travel." +
                 " It’s an important topic I can’t adequately cover, so I brought in an expert to share her advice " +

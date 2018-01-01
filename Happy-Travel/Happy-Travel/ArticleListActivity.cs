@@ -38,9 +38,9 @@ namespace HappyTravel
             initView();
 
             // open or create the database
-            articleDB.CreateTable();
-            articleDB.ClearArticles();
-            articleDB.initArticleDB();
+            //articleDB.CreateTable();
+            //articleDB.ClearArticles();
+            //articleDB.initArticleDB();
             // get all the articles from database
             articleListData = articleDB.GetAriticles();
             articleAdapter = new ArticleListViewAdapter(this, articleListData);

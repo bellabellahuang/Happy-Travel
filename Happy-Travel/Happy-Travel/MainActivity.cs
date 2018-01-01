@@ -11,6 +11,7 @@ namespace HappyTravel
         private Button mBtnSignUp;
         private Button mBtnSignIn;
         private UsersDB userDB = UsersDB.Users;
+        private ArticleDB articleDB = ArticleDB.Articles;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -25,6 +26,10 @@ namespace HappyTravel
             userDB.CreateTable();
             userDB.ClearUserCache();
             userDB.initUserDB();
+
+            articleDB.CreateTable();
+            articleDB.ClearArticles();
+            articleDB.initArticleDB();
 
             // the click event of the sign up button
             mBtnSignUp.Click += (object sender, System.EventArgs e) => 

@@ -50,7 +50,14 @@ namespace HappyTravel
 
             // display the detail of article
             title.Text = article.title;
-            author.Text = Author.username;
+            if (Author == null)
+            {
+                author.Text = "NO_NAME";
+            }
+            else
+            {
+                author.Text = Author.username;
+            }
             content.Text = article.content;
 
             // call the menuBar method to handle buttons click events
