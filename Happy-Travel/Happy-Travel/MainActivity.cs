@@ -2,6 +2,7 @@
 using Android.Widget;
 using Android.OS;
 using Android.Views;
+using System;
 
 namespace HappyTravel
 {
@@ -12,6 +13,7 @@ namespace HappyTravel
         private Button mBtnSignIn;
         private UsersDB userDB = UsersDB.Users;
         private ArticleDB articleDB = ArticleDB.Articles;
+        private CommentsDB commentDB = CommentsDB.comments;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -23,13 +25,9 @@ namespace HappyTravel
             mBtnSignUp = FindViewById<Button>(Resource.Id.btnSignUp);
             mBtnSignIn = FindViewById<Button>(Resource.Id.btnSignIn);
 
-            userDB.CreateTable();
-            userDB.ClearUserCache();
-            userDB.initUserDB();
-
-            articleDB.CreateTable();
-            articleDB.ClearArticles();
-            articleDB.initArticleDB();
+            initDB(){
+                
+            }
 
             // the click event of the sign up button
             mBtnSignUp.Click += (object sender, System.EventArgs e) => 
@@ -48,6 +46,21 @@ namespace HappyTravel
                 Dialog_SignIn signInDialog = new Dialog_SignIn();
                 signInDialog.Show(transaction, "sign in dialog fragment");
             };
+        }
+
+        private void initDB()
+        {
+            userDB.CreateTable();
+            userDB.ClearUserCache();
+            userDB.initUserDB();
+
+            articleDB.CreateTable();
+            articleDB.ClearArticles();
+            articleDB.initArticleDB();
+
+            commentDB.CreateTable();
+            commentDB.DeleteAll();
+            commentDB.initCommentDB();
         }
     }
 }
