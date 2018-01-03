@@ -1924,8 +1924,8 @@ namespace HappyTravel
 			// aapt resource value: 0x7f0b002e
 			public const int bottom = 2131427374;
 			
-			// aapt resource value: 0x7f0b0070
-			public const int btnAddComment = 2131427440;
+			// aapt resource value: 0x7f0b006f
+			public const int btnAddComment = 2131427439;
 			
 			// aapt resource value: 0x7f0b0078
 			public const int btnDialogSignIn = 2131427448;
@@ -1975,8 +1975,8 @@ namespace HappyTravel
 			// aapt resource value: 0x7f0b006d
 			public const int commentTextView = 2131427437;
 			
-			// aapt resource value: 0x7f0b006e
-			public const int commentsListView = 2131427438;
+			// aapt resource value: 0x7f0b0070
+			public const int commentsListView = 2131427440;
 			
 			// aapt resource value: 0x7f0b0040
 			public const int contentPanel = 2131427392;
@@ -1993,8 +1993,8 @@ namespace HappyTravel
 			// aapt resource value: 0x7f0b003a
 			public const int default_activity_button = 2131427386;
 			
-			// aapt resource value: 0x7f0b006a
-			public const int detailScrollView = 2131427434;
+			// aapt resource value: 0x7f0b0065
+			public const int detailScrollView = 2131427429;
 			
 			// aapt resource value: 0x7f0b0011
 			public const int disableHome = 2131427345;
@@ -2065,8 +2065,8 @@ namespace HappyTravel
 			// aapt resource value: 0x7f0b000a
 			public const int line3 = 2131427338;
 			
-			// aapt resource value: 0x7f0b0067
-			public const int linearLayout1 = 2131427431;
+			// aapt resource value: 0x7f0b0068
+			public const int linearLayout1 = 2131427432;
 			
 			// aapt resource value: 0x7f0b000e
 			public const int listMode = 2131427342;
@@ -2131,8 +2131,8 @@ namespace HappyTravel
 			// aapt resource value: 0x7f0b004f
 			public const int radio = 2131427407;
 			
-			// aapt resource value: 0x7f0b0065
-			public const int relativeLayout1 = 2131427429;
+			// aapt resource value: 0x7f0b0066
+			public const int relativeLayout1 = 2131427430;
 			
 			// aapt resource value: 0x7f0b00a5
 			public const int right_icon = 2131427493;
@@ -2242,8 +2242,8 @@ namespace HappyTravel
 			// aapt resource value: 0x7f0b0092
 			public const int textView1 = 2131427474;
 			
-			// aapt resource value: 0x7f0b0068
-			public const int textView2 = 2131427432;
+			// aapt resource value: 0x7f0b0069
+			public const int textView2 = 2131427433;
 			
 			// aapt resource value: 0x7f0b00ac
 			public const int textView3 = 2131427500;
@@ -2272,8 +2272,8 @@ namespace HappyTravel
 			// aapt resource value: 0x7f0b0075
 			public const int txtByUser = 2131427445;
 			
-			// aapt resource value: 0x7f0b006f
-			public const int txtComment = 2131427439;
+			// aapt resource value: 0x7f0b006e
+			public const int txtComment = 2131427438;
 			
 			// aapt resource value: 0x7f0b0074
 			public const int txtCommentItem = 2131427444;
@@ -2284,14 +2284,14 @@ namespace HappyTravel
 			// aapt resource value: 0x7f0b0082
 			public const int txtCreatAccount = 2131427458;
 			
-			// aapt resource value: 0x7f0b0069
-			public const int txtDetailAuthor = 2131427433;
+			// aapt resource value: 0x7f0b006a
+			public const int txtDetailAuthor = 2131427434;
 			
 			// aapt resource value: 0x7f0b006b
 			public const int txtDetailContent = 2131427435;
 			
-			// aapt resource value: 0x7f0b0066
-			public const int txtDetailTitle = 2131427430;
+			// aapt resource value: 0x7f0b0067
+			public const int txtDetailTitle = 2131427431;
 			
 			// aapt resource value: 0x7f0b008b
 			public const int txtHome = 2131427467;

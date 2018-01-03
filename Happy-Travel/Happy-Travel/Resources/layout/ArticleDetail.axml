@@ -3,82 +3,116 @@
     p1:minWidth="25px"
     p1:minHeight="25px"
     p1:layout_width="match_parent"
-    p1:layout_height="match_parent"
-    p1:background="@android:color/background_light"
-    p1:id="@+id/relativeLayout1">
-    <TextView
-        p1:text="@string/title_hint"
-        p1:layout_width="match_parent"
-        p1:layout_height="wrap_content"
-        p1:gravity="center"
-        p1:textSize="25sp"
-        p1:paddingTop="5dp"
-        p1:paddingBottom="5dp"
-        p1:textColor="@android:color/white"
-        p1:background="#ff0f9881"
-        p1:id="@+id/txtDetailTitle" />
-    <LinearLayout
-        p1:gravity="center"
-        p1:orientation="horizontal"
-        p1:minWidth="25px"
-        p1:minHeight="25px"
-        p1:layout_width="match_parent"
-        p1:layout_height="wrap_content"
-        p1:paddingBottom="5dp"
-        p1:id="@+id/linearLayout1"
-        p1:layout_below="@id/txtDetailTitle"
-        p1:background="#ff0f9881">
-        <TextView
-            p1:text="Author:"
-            p1:layout_width="wrap_content"
-            p1:layout_height="wrap_content"
-            p1:layout_marginRight="5dp"
-            p1:id="@+id/textView2" />
-        <TextView
-            p1:text="@string/author_hint"
-            p1:layout_width="wrap_content"
-            p1:layout_height="wrap_content"
-            p1:id="@+id/txtDetailAuthor" />
-    </LinearLayout>
+    p1:layout_height="wrap_content"
+    p1:background="@android:color/background_light">
     <ScrollView
         p1:minWidth="25px"
         p1:minHeight="25px"
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
-        p1:padding="5dp"
-        p1:id="@+id/detailScrollView"
-        p1:layout_below="@id/linearLayout1">
-        <TextView
-            p1:text="@string/content_hint"
-            p1:textColor="@android:color/black"
+        p1:id="@+id/detailScrollView">
+        <RelativeLayout
+            p1:minWidth="25px"
+            p1:minHeight="25px"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:gravity="center_horizontal"
-            p1:id="@+id/txtDetailContent" />
+            p1:background="@android:color/background_light"
+            p1:id="@+id/relativeLayout1">
+            <TextView
+                p1:text="@string/title_hint"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:gravity="center"
+                p1:textSize="25sp"
+                p1:paddingTop="5dp"
+                p1:paddingBottom="5dp"
+                p1:textColor="@android:color/white"
+                p1:background="#ff0f9881"
+                p1:id="@+id/txtDetailTitle" />
+            <LinearLayout
+                p1:gravity="center"
+                p1:orientation="horizontal"
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:paddingBottom="5dp"
+                p1:id="@+id/linearLayout1"
+                p1:layout_below="@id/txtDetailTitle"
+                p1:background="#ff0f9881">
+                <TextView
+                    p1:text="Author:"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="wrap_content"
+                    p1:layout_marginRight="5dp"
+                    p1:id="@+id/textView2" />
+                <TextView
+                    p1:text="@string/author_hint"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/txtDetailAuthor" />
+            </LinearLayout>
+            <TextView
+                p1:text="@string/content_hint"
+                p1:textColor="@android:color/black"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:gravity="center_horizontal"
+                p1:layout_below="@id/linearLayout1"
+                p1:id="@+id/txtDetailContent" />
+            <RelativeLayout
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:layout_below="@id/txtDetailContent"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/commentLayout">
+                <TextView
+                    p1:text="@string/comment_hint"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content"
+                    p1:gravity="center"
+                    p1:textSize="20sp"
+                    p1:layout_marginTop="5dp"
+                    p1:paddingTop="5dp"
+                    p1:paddingBottom="5dp"
+                    p1:id="@+id/commentTextView"
+                    p1:textColor="@android:color/white"
+                    p1:background="@android:color/holo_purple" />
+                <EditText
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content"
+                    p1:minLines="3"
+                    p1:layout_marginTop="5dp"
+                    p1:gravity="top"
+                    p1:layout_below="@id/commentTextView"
+                    p1:background="@drawable/edit_text_style"
+                    p1:backgroundTint="#ffe0e0e0"
+                    p1:id="@+id/txtComment" />
+                <Button
+                    p1:text="@string/btnComment_hint"
+                    p1:layout_below="@id/txtComment"
+                    p1:background="@drawable/buttonsignupstyle"
+                    p1:layout_centerHorizontal="true"
+                    p1:layout_marginTop="5dp"
+                    p1:textColor="@android:color/white"
+                    p1:layout_marginBottom="50dp"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/btnAddComment" />
+            </RelativeLayout>
+        </RelativeLayout>
     </ScrollView>
     <RelativeLayout
         p1:minWidth="25px"
         p1:minHeight="25px"
-        p1:layout_below="@id/detailScrollView"
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
-        p1:id="@+id/commentLayout">
-        <TextView
-            p1:text="@string/comment_hint"
-            p1:layout_width="match_parent"
-            p1:layout_height="wrap_content"
-            p1:gravity="center"
-            p1:textSize="20sp"
-            p1:layout_marginTop="5dp"
-            p1:paddingTop="5dp"
-            p1:paddingBottom="5dp"
-            p1:id="@+id/commentTextView"
-            p1:textColor="@android:color/white"
-            p1:background="@android:color/holo_purple" />
+        p1:layout_marginBottom="50dp"
+        p1:layout_below="@id/detailScrollView">
         <ListView
             p1:minWidth="25px"
             p1:minHeight="25px"
-            p1:layout_below="@id/commentTextView"
             p1:layout_marginTop="5dp"
             p1:layout_marginLeft="5dp"
             p1:layout_marginRight="5dp"
@@ -86,27 +120,6 @@
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
             p1:id="@+id/commentsListView" />
-        <EditText
-            p1:layout_width="match_parent"
-            p1:layout_height="wrap_content"
-            p1:minLines="3"
-            p1:layout_marginTop="5dp"
-            p1:gravity="top"
-            p1:layout_below="@id/commentsListView"
-            p1:background="@drawable/edit_text_style"
-            p1:backgroundTint="#ffe0e0e0"
-            p1:id="@+id/txtComment" />
-        <Button
-            p1:text="@string/btnComment_hint"
-            p1:layout_below="@id/txtComment"
-            p1:background="@drawable/buttonsignupstyle"
-            p1:layout_centerHorizontal="true"
-            p1:layout_marginTop="5dp"
-            p1:textColor="@android:color/white"
-            p1:layout_marginBottom="50dp"
-            p1:layout_width="wrap_content"
-            p1:layout_height="wrap_content"
-            p1:id="@+id/btnAddComment" />
     </RelativeLayout>
     <LinearLayout
         p1:orientation="vertical"
