@@ -139,7 +139,6 @@
     <AndroidResource Include="Resources\layout\Dialog_Sign_In.axml" />
     <AndroidResource Include="Resources\layout\Home.axml" />
     <AndroidResource Include="Resources\mipmap-xhdpi\banner.jpeg" />
-    <AndroidResource Include="Resources\layout\Menu.axml" />
     <AndroidResource Include="Resources\mipmap-xhdpi\me.png" />
     <AndroidResource Include="Resources\mipmap-xhdpi\pen.png" />
     <AndroidResource Include="Resources\layout\Post.axml" />
