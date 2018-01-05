@@ -10,6 +10,7 @@ namespace HappyTravel
         SQLiteConnection dbConn;
         private const string DB_NAME = "User_DB.db3";
 
+
         private UsersDB()
         {
         }
@@ -66,21 +67,22 @@ namespace HappyTravel
 
         // initiate database
         public void initUserDB(){
-            User bob = new User();
-            bob.username = "bob";
-            bob.password = "bob";
+                
+            //User bob = new User();
+            //bob.username = "bob";
+            //bob.password = "bob";
 
-            User mary = new User();
-            mary.username = "mary";
-            mary.password = "mary";
+            //User mary = new User();
+            //mary.username = "mary";
+            //mary.password = "mary";
 
-            User jim = new User();
-            jim.username = "jim";
-            jim.password = "jim";
+            //User jim = new User();
+            //jim.username = "jim";
+            //jim.password = "jim";
 
-            dbConn.Insert(bob);
-            dbConn.Insert(mary);
-            dbConn.Insert(jim);
+            //dbConn.Insert(bob);
+            //dbConn.Insert(mary);
+            //dbConn.Insert(jim);
         }
     }
 }

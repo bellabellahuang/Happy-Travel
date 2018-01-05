@@ -3,6 +3,7 @@ using Android.Widget;
 using Android.OS;
 using Android.Views;
 using System;
+using System.Collections.Generic;
 
 namespace HappyTravel
 {
@@ -14,6 +15,7 @@ namespace HappyTravel
         private UsersDB userDB = UsersDB.Users;
         private ArticleDB articleDB = ArticleDB.Articles;
         private CommentsDB commentDB = CommentsDB.comments;
+        private List<User> userListData = new List<User>();
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -26,6 +28,7 @@ namespace HappyTravel
             mBtnSignIn = FindViewById<Button>(Resource.Id.btnSignIn);
 
             initDB();
+
 
             // the click event of the sign up button
             mBtnSignUp.Click += (object sender, System.EventArgs e) => 
@@ -46,19 +49,37 @@ namespace HappyTravel
             };
         }
 
+        private async void DownloadUsersLisyAsync()
+        {
+            UserService service = new UserService();
+            if (!service.isConnected(this))
+            {
+                Toast toast = Toast.MakeText(this, "Not connected to internet. Please check your device network settings.", ToastLength.Short);
+                toast.Show();
+            }
+            else
+            {
+                userListData = await service.GetUserListAsync();
+                foreach(User user in userListData){
+                    userDB.SaveUser(user);
+                }
+            }
+        }
+
         private void initDB()
         {
             userDB.CreateTable();
             userDB.ClearUserCache();
-            userDB.initUserDB();
+            DownloadUsersLisyAsync();
+            //userDB.initUserDB();
 
             articleDB.CreateTable();
             articleDB.ClearArticles();
-            articleDB.initArticleDB();
+            //articleDB.initArticleDB();
 
             commentDB.CreateTable();
             commentDB.DeleteAll();
-            commentDB.initCommentDB();
+            //commentDB.initCommentDB();
         }
     }
 }
