@@ -23,6 +23,7 @@ namespace HappyTravel
         private Button btnHome;
         private Button btnPost;
         private Article newArticle = new Article();
+        private List<Article> articleListData = ArticleDB.Articles.GetAriticles();
         int userId;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -91,6 +92,7 @@ namespace HappyTravel
                     newArticle.title = title.Text;
                     newArticle.content = content.Text;
                     newArticle.user_id = userId;
+                    newArticle.article_id = articleListData.ElementAt(articleListData.Count - 1).article_id + 1;
 
                     // save the new article to the database
                     ArticleDB.Articles.SaveArticle(newArticle);
