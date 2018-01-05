@@ -6,7 +6,7 @@ namespace HappyTravel
     [Table("UsersTable")]
     public class User
     {
-        [PrimaryKey, AutoIncrement]
+        [PrimaryKey]
         public int user_id { get; set; }
 
         [NotNull, MaxLength(30)]

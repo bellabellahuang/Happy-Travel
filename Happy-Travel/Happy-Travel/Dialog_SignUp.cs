@@ -19,6 +19,7 @@ namespace HappyTravel
         private EditText password2;
         private Button btnSignUp;
         private User newUser = new User();
+        private List<User> userListData = UsersDB.Users.GetUsersFromCache();
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
@@ -44,6 +45,7 @@ namespace HappyTravel
                     // generate a new user
                     newUser.username = username.Text;
                     newUser.password = password1.Text;
+                    newUser.user_id = userListData.ElementAt(userListData.Count - 1).user_id + 1;
                     // save the new user
                     UsersDB.Users.SaveUser(newUser);
 
