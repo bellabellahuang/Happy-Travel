@@ -6,7 +6,7 @@ namespace HappyTravel
     [Table("CommentsTable")]
     public class Comment
     {
-        [PrimaryKey, AutoIncrement]
+        [PrimaryKey]
         public int comment_id { get; set; }
 
         [NotNull]

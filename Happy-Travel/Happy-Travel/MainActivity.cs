@@ -108,17 +108,14 @@ namespace HappyTravel
             userDB.CreateTable();
             userDB.ClearUserCache();
             DownloadUsersLisyAsync();
-            //userDB.initUserDB();
 
             articleDB.CreateTable();
             articleDB.ClearArticles();
             DownloadArticlesLisyAsync();
-            //articleDB.initArticleDB();
 
             commentDB.CreateTable();
             commentDB.DeleteAll();
             DownloadCommentsLisyAsync();
-            //commentDB.initCommentDB();
         }
     }
 }

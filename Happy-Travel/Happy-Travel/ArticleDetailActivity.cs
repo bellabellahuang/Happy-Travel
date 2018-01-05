@@ -30,6 +30,7 @@ namespace HappyTravel
         private int userId;
         private CommentsDB commentDB = CommentsDB.comments;
         private List<Comment> commentListData;
+        private List<Comment> allComments = CommentsDB.comments.GetAllComments();
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -92,6 +93,7 @@ namespace HappyTravel
                     newComment.article_id = articleId;
                     newComment.user_id = userId;
                     newComment.comment = txtComment.Text;
+                    newComment.comment_id = allComments.ElementAt(allComments.Count - 1).comment_id + 1;
 
                     commentDB.SaveComment(newComment);
                     Toast toast = Toast.MakeText(this, "Your comment has been added", ToastLength.Long);
