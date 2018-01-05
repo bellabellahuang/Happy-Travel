@@ -2573,19 +2573,22 @@ namespace HappyTravel
 			public const int Icon = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int logo = 2130903048;
+			public const int Ion = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int me = 2130903049;
+			public const int logo = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int pen = 2130903050;
+			public const int me = 2130903050;
 			
 			// aapt resource value: 0x7f03000b
-			public const int pen1 = 2130903051;
+			public const int pen = 2130903051;
 			
 			// aapt resource value: 0x7f03000c
-			public const int person1 = 2130903052;
+			public const int pen1 = 2130903052;
+			
+			// aapt resource value: 0x7f03000d
+			public const int person1 = 2130903053;
 			
 			static Mipmap()
 			{

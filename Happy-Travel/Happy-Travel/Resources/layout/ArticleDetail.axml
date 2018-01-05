@@ -82,7 +82,7 @@
                 <EditText
                     p1:layout_width="match_parent"
                     p1:layout_height="wrap_content"
-                    p1:minLines="3"
+                    p1:minLines="2"
                     p1:layout_marginTop="5dp"
                     p1:gravity="top"
                     p1:layout_below="@id/commentTextView"
