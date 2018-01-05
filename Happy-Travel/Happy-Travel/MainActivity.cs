@@ -16,6 +16,7 @@ namespace HappyTravel
         private ArticleDB articleDB = ArticleDB.Articles;
         private CommentsDB commentDB = CommentsDB.comments;
         private List<User> userListData = new List<User>();
+        private List<Article> articleListData = new List<Article>();
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -28,7 +29,6 @@ namespace HappyTravel
             mBtnSignIn = FindViewById<Button>(Resource.Id.btnSignIn);
 
             initDB();
-
 
             // the click event of the sign up button
             mBtnSignUp.Click += (object sender, System.EventArgs e) => 
@@ -66,6 +66,24 @@ namespace HappyTravel
             }
         }
 
+        private async void DownloadArticlesLisyAsync()
+        {
+            ArticleService service = new ArticleService();
+            if (!service.isConnected(this))
+            {
+                Toast toast = Toast.MakeText(this, "Not connected to internet. Please check your device network settings.", ToastLength.Short);
+                toast.Show();
+            }
+            else
+            {
+                articleListData = await service.GetArticleListAsync();
+                foreach (Article article in articleListData)
+                {
+                    articleDB.SaveArticle(article);
+                }
+            }
+        }
+
         private void initDB()
         {
             userDB.CreateTable();
@@ -75,6 +93,7 @@ namespace HappyTravel
 
             articleDB.CreateTable();
             articleDB.ClearArticles();
+            DownloadArticlesLisyAsync();
             //articleDB.initArticleDB();
 
             commentDB.CreateTable();

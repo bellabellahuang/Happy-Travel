@@ -122,6 +122,7 @@
     <Compile Include="CommentsDB.cs" />
     <Compile Include="CommentListAdapter.cs" />
     <Compile Include="UserService.cs" />
+    <Compile Include="ArticleService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
