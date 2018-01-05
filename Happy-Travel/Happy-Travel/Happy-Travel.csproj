@@ -123,6 +123,7 @@
     <Compile Include="CommentListAdapter.cs" />
     <Compile Include="UserService.cs" />
     <Compile Include="ArticleService.cs" />
+    <Compile Include="CommentService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

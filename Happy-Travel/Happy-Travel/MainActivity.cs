@@ -17,6 +17,7 @@ namespace HappyTravel
         private CommentsDB commentDB = CommentsDB.comments;
         private List<User> userListData = new List<User>();
         private List<Article> articleListData = new List<Article>();
+        private List<Comment> commentListData = new List<Comment>();
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -84,6 +85,24 @@ namespace HappyTravel
             }
         }
 
+        private async void DownloadCommentsLisyAsync()
+        {
+            CommentService service = new CommentService();
+            if (!service.isConnected(this))
+            {
+                Toast toast = Toast.MakeText(this, "Not connected to internet. Please check your device network settings.", ToastLength.Short);
+                toast.Show();
+            }
+            else
+            {
+                commentListData = await service.GetCommentListAsync();
+                foreach (Comment comment in commentListData)
+                {
+                    commentDB.SaveComment(comment);
+                }
+            }
+        }
+
         private void initDB()
         {
             userDB.CreateTable();
@@ -98,6 +117,7 @@ namespace HappyTravel
 
             commentDB.CreateTable();
             commentDB.DeleteAll();
+            DownloadCommentsLisyAsync();
             //commentDB.initCommentDB();
         }
     }
