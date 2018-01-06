@@ -26,9 +26,11 @@ namespace HappyTravel
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
+            // assign values to widget variables
             mBtnSignUp = FindViewById<Button>(Resource.Id.btnSignUp);
             mBtnSignIn = FindViewById<Button>(Resource.Id.btnSignIn);
 
+            // initial databases
             initDB();
 
             // the click event of the sign up button
@@ -50,6 +52,7 @@ namespace HappyTravel
             };
         }
 
+        // download user data
         private async void DownloadUsersLisyAsync()
         {
             UserService service = new UserService();
@@ -67,6 +70,7 @@ namespace HappyTravel
             }
         }
 
+        // download article data
         private async void DownloadArticlesLisyAsync()
         {
             ArticleService service = new ArticleService();
@@ -85,6 +89,7 @@ namespace HappyTravel
             }
         }
 
+        // download comment data
         private async void DownloadCommentsLisyAsync()
         {
             CommentService service = new CommentService();
@@ -103,6 +108,7 @@ namespace HappyTravel
             }
         }
 
+        // initiate databases
         private void initDB()
         {
             userDB.CreateTable();

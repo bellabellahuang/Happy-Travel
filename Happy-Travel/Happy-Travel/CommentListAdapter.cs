@@ -39,6 +39,7 @@ namespace HappyTravel
             }
         }
 
+        // generate the comment ListView
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
             var view = convertView;

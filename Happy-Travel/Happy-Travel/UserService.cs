@@ -13,8 +13,10 @@ namespace HappyTravel
 {
     public class UserService
     {
+        // url for get request
         private const string GET_USERS = "https://my-json-server.typicode.com/bellabellahuang/jsonDB/users";
 
+        // get the user list
         public async Task<List<User>> GetUserListAsync()
         {
             HttpClient httpClient = new HttpClient();
@@ -47,6 +49,7 @@ namespace HappyTravel
             }
         }
 
+        // check the network is connected successfully
         public bool isConnected(Context activity)
         {
             var connectivityManager = (ConnectivityManager)activity.GetSystemService(Context.ConnectivityService);

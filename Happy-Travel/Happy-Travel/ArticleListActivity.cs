@@ -37,15 +37,12 @@ namespace HappyTravel
             // initiate views
             initView();
 
-            // open or create the database
-            //articleDB.CreateTable();
-            //articleDB.ClearArticles();
-            //articleDB.initArticleDB();
             // get all the articles from database
             articleListData = articleDB.GetAriticles();
             articleAdapter = new ArticleListViewAdapter(this, articleListData);
             articleListView.Adapter = articleAdapter;
 
+            // click event handler on each article item
             articleListView.ItemClick += (object sender, AdapterView.ItemClickEventArgs e) => {
                 Article article = articleListData[(int)e.Id];
                 Intent intent = new Intent(this, typeof(ArticleDetailActivity));

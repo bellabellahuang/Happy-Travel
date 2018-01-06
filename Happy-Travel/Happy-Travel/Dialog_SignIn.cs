@@ -25,6 +25,8 @@ namespace HappyTravel
             base.OnCreateView(inflater, container, savedInstanceState);
 
             var view = inflater.Inflate(Resource.Layout.Dialog_Sign_In, container, false);
+
+            // assign value to widget variables
             username = view.FindViewById<EditText>(Resource.Id.txtUsername);
             password = view.FindViewById<EditText>(Resource.Id.txtPassword);
             btnSignIn = view.FindViewById<Button>(Resource.Id.btnDialogSignIn);

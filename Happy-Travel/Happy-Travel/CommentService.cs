@@ -13,8 +13,10 @@ namespace HappyTravel
 {
     public class CommentService
     {
+        // url for GET request
         private const string GET_COMMENTS = "https://my-json-server.typicode.com/bellabellahuang/jsonDB/comments";
 
+        // get the comment list
         public async Task<List<Comment>> GetCommentListAsync()
         {
             HttpClient httpClient = new HttpClient();
@@ -47,6 +49,7 @@ namespace HappyTravel
             }
         }
 
+        // check if the network is connected succefully
         public bool isConnected(Context activity)
         {
             var connectivityManager = (ConnectivityManager)activity.GetSystemService(Context.ConnectivityService);
